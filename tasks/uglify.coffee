@@ -14,5 +14,6 @@ module.exports =
     files:
       "dist/js/lib.min.js": [
         "bower_components/jquery/dist/jquery.js"
-        # "static/js/libs/*.js"
+        "bower_components/velocity/jquery.velocity.js"
+        "static/js/libs/*.js"
       ]

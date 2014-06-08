@@ -16,31 +16,32 @@
 .js .grid.loaded
   background: none
 
-.grid li
+.grid > li
   display: inline-block
   overflow: hidden
   width: 314px
   text-align: left
   vertical-align: top
+  &.social h1
+    background:white
+    margin:0
+    padding:0.25em 0
+    color:light-text-color
 
-.js .grid li
+.js .grid > li
   display: none
   float: left
 
-.js .grid.loaded li
+.js .grid.loaded > li
   display: block
+
+.social-icon
+  font-size:10rem
 
 /* Title box */
 .title-box h2
   display: block
-  margin: 7px
-  padding: 20px
-  background: #2E3444
-  color: #D3EEE2
-  text-transform: uppercase
-  letter-spacing: 1px
-  font-weight: 300
-
+  
 .title-box h2 a
   display: block
   font-weight: 900
@@ -49,13 +50,13 @@
   color: #D3EEE2
 
 /* Anchor and image */
-.grid li > a,
-.grid li img
+.grid > li > a,
+.grid > li img
   display: block
   outline: none
   border: none
 
-.grid li > a
+.grid > li > a
   position: relative
   overflow: hidden
   margin: 7px
@@ -100,11 +101,11 @@
   top: -100%
 
 /* Title */
-.grid li figcaption
+.grid > li figcaption
   transition: transform 0.2s, color 0.2s
 
 /* Pseudo element for hover effect */
-.grid li > a::before
+.grid > li > a::before
   position: absolute
   top: 0
   left: 0
@@ -116,7 +117,7 @@
   transition: border-width 0.2s, border-color 0.2s
 
 /* Hover effects */
-.grid li.shown:hover img
+.grid > li.shown:hover img
   transition: transform 4s ease
   transform: scale3d(1.1,1.1,1)
 
@@ -132,7 +133,7 @@
   100% { transform: translate3d(0,100%,0) }
 
 /* Shadow */
-.grid li.animate .curtain::after
+.grid > li.animate .curtain::after
   animation: fadeOut 1.5s ease forwards
   animation-delay: inherit
 
@@ -142,18 +143,18 @@
   100% { opacity: 0 }
 
 /* Hide image and title and show at half time */
-.js .grid li img,
-.js .grid li figcaption
+.js .grid > li img,
+.js .grid > li figcaption
   visibility: hidden
 
-.grid li.animate img,
-.grid li.animate figcaption
+.grid > li.animate img,
+.grid > li.animate figcaption
   animation: showMe 1.5s step-end forwards
 
 @keyframes showMe
   from { visibility: hidden }
   60%, 100% { visibility: visible }
 
-.grid li.shown img,
-.grid li.shown figcaption
+.grid > li.shown img,
+.grid > li.shown figcaption
   visibility: visible

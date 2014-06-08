@@ -1,3 +1,5 @@
+reset-html5()
+
 html
   min-height: 100%
   font-size: 62.5%
@@ -15,12 +17,19 @@ html
 
 body
   font-family: 'Helvetica Neue', sans-serif;
-  background-color:background-color
+  background-color:white
   color: text-color
   height: 100%
   overflow-y: auto
   overflow-x:hidden
+  letter-spacing:1px
+  margin:0
   @extend .font-thin
 
 p
   font-size: 2rem
+
+.logo
+  max-width:40%
+  @media ipadAndUp
+    max-width:125px

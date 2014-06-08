@@ -9,6 +9,13 @@ module.exports = debug:
     },
     {
       expand: true
+      cwd: "app/js/libs"
+      src: ["*.js"]
+      dest: "dist/js/libs"
+      ext: ".js"
+    },
+    {
+      expand: true
       cwd: "app/img"
       src: ["*"]
       dest: "dist/img"

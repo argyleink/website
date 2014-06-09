@@ -67,8 +67,8 @@
     isRevealed, 
     noscroll, 
     isAnimating,
-    container = document.getElementById( 'container' ),
-    trigger = container.querySelector( 'button.trigger' );
+    container = document.getElementById('container'),
+    trigger = container.querySelector('.directions');
 
   function scrollY() {
     return window.pageYOffset || docElem.scrollTop;

@@ -20,7 +20,7 @@ module.exports =
         "app/js/libs/imagesloaded.pkgd.min.js"
         "app/js/libs/modernizr.custom.js"
         # "app/js/libs/classie.js"
-        # "app/js/libs/colorfinder-1.js"
+        # "app/js/libs/colorfinder-1.1.js"
         # "app/js/libs/gridScrollFx.js"
         # "app/js/libs/*.js"
       ]

@@ -3,15 +3,14 @@ html
   include includes/head
   body
     include includes/nav
-    //- include includes/header
-    #container.container.intro-effect-push
-      header.header
-        .bg-img
-          img(src='img/1.jpg')
-        .title
-          img.logo(src='img/logo.jpg')
-          h1 Left & Right Brained
+    #container.container
+      include includes/header
 
-    include includes/grid
+      .title
+        h1 My Work
+        p.subline Devigner: Developer += Designer
+      article.content
+        div
+          include includes/grid
 
   include includes/scripts

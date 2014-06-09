@@ -12,7 +12,7 @@ module.exports =
 
   images:
     files: ["app/img/**/*"]
-    tasks: ["newer:copy:debug"]
+    tasks: ["newer:copy:images"]
 
   html:
     files: ["app/**/*.jade", "!app/templates/**/*"]

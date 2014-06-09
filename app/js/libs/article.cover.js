@@ -1,24 +1,9 @@
-(function() {
+var Article = (function(el, options) {
+  if (!el)              return console.log("missing element");
+  if (!options.trigger) return console.log("missing trigger");
 
   // detect if IE : from http://stackoverflow.com/a/16657946    
-  var ie = (function(){
-    var undef,rv = -1; // Return value assumes failure.
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf('MSIE ');
-    var trident = ua.indexOf('Trident/');
-
-    if (msie > 0) {
-      // IE 10 or older => return version number
-      rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-    } else if (trident > 0) {
-      // IE 11 (or newer) => return version number
-      var rvNum = ua.indexOf('rv:');
-      rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
-    }
-
-    return ((rv > -1) ? rv : undef);
-  }());
-
+  var ie = App.Browser.msie;
 
   // disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179          
   // left: 37, up: 38, right: 39, down: 40,
@@ -62,19 +47,21 @@
     window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
   }
 
-  var docElem = window.document.documentElement,
-    scrollVal,
-    isRevealed, 
-    noscroll, 
-    isAnimating,
-    container = document.getElementById('container'),
-    trigger = container.querySelector('.directions');
+  var docElem     = window.document.documentElement,
+      enabled     = true,
+      scrollVal,
+      isRevealed, 
+      noscroll, 
+      isAnimating,
+      container   = el,
+      trigger     = container.querySelector(options.trigger);
 
   function scrollY() {
     return window.pageYOffset || docElem.scrollTop;
   }
   
   function scrollPage() {
+    if (!enabled) return;
     scrollVal = scrollY();
     
     if( noscroll && !ie ) {
@@ -134,7 +121,33 @@
     classie.add( container, 'notrans' );
     classie.add( container, 'modify' );
   }
+
+  function disable() {
+    enabled = false;
+  }
+
+  function enable() {
+    enabled = true;
+  }
+
+  function getContainer() {
+    return container;
+  }
+
+  function getTrigger() {
+    return trigger;
+  }
   
-  window.addEventListener( 'scroll', scrollPage );
-  trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-})();
+  window.addEventListener('scroll', scrollPage);
+  $(trigger).on('click', function() { 
+    toggle('reveal'); 
+  });
+
+  return {
+    disable:    disable,
+    enable:     enable,
+    toggle:     toggle,
+    container:  getContainer,
+    trigger:    getTrigger
+  }
+});

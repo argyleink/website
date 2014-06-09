@@ -1,5 +1,5 @@
 li.title-box
-  a(href="#")
+  a.light(href="#")
     h1 Hi! 
     h2 I'm Adam Argyle
     //- p Here's all the hats I can wear:
@@ -48,6 +48,7 @@ each item in projects
     when 'project'
       li.project
         a(href=item.url)
+          //- img(src="img/tiles/#{item.image}")
           img(src=item.image)
           figcaption
             h3= item.title
@@ -55,9 +56,14 @@ each item in projects
     when 'social'
       li.social
         a(href=item.url)
-          h1(class="social-icon block text-center fa fa-"+item.image)
-          figcaption
-            h3= item.title
+          //- img(src="img/tiles/#{item.image}")
+          img(src=item.image)
+          if item.detail || item.title
+            figcaption
+              if item.title
+                i(class="social-icon block text-center fa fa-"+item.title)
+              if item.detail
+                p= item.detail
     when 'message'
       li.title-box
         h2 

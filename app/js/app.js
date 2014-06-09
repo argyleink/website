@@ -1,4 +1,7 @@
 $(function(){
+  App.Home = new Article($('#home')[0], {
+    trigger:  '#projects'
+  });
 
   // set container height
   // watch it on resize, to reset app height, jqueries resize is throttled
@@ -25,8 +28,8 @@ $(function(){
         type:   'project'
       },
       { 
-        image:  'github-alt',
-        title:  'Github',
+        image:  'img/tiles/github.png',
+        title:  'github-alt',
         url:    'https://github.com/argyleink',
         type:   'social'
       },
@@ -45,7 +48,7 @@ $(function(){
         type:   'project'
       },
       { 
-        image:  'http://placebox.es/400/700',
+        image:  'img/tiles/leap.png',
         title:  'Leap Motion',
         detail: 'Fun little projects',
         url:    'leap.html',
@@ -105,8 +108,8 @@ $(function(){
 
   jade.render($('#grid')[0], 'grid', gridData);
 
-  // new GridScrollFx(document.getElementById('grid'), {
-  //   viewportFactor : 0.4
-  // });
+  App.Grid = new GridScrollFx($('#grid')[0], {
+    viewportFactor : 0.4
+  });
 
 });

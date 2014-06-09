@@ -1,39 +1,23 @@
 header.header
   .bg-img
   .title
-    h1 Template Catch Phrase
-    h2 Small Talk
-    #read.trigger.btn.light.push-right Read
-    .btn.light Demo
-//- #read.row.directions.text-center.center-hand
-//-   .column-3-hand
-    
-//-     br
-//-     i.fa.fa-3x.fa-angle-down
+    h1= article.cover.title
+    h2= article.cover.subline
+    #read.trigger.btn.light.push-right 
+      i.fa.fa-book
+      |  Read
+    .btn.light 
+      i.fa.fa-gamepad
+      |  Demo
+.row.directions.text-center.center-hand
+  .column-3-hand
+    i.fa.fa-3x.fa-angle-down
 
 .title
-  h1 Project Title
-  p.subline Project sub title
-  .pageload-link Show Page Loader
+  h1= article.title
+  p.subline= article.subline
 
 article.content.dark
   .row.center-hand
-    .column-10-hand.text-left
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      p Let's Begin
-      .pageload-link Show Page Loader
+    #project-post.column-10-hand.text-left
+      //- filled from ajax

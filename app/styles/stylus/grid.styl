@@ -19,14 +19,21 @@
 .grid > li
   display: inline-block
   overflow: hidden
-  width: 314px
+  width: 325px
   text-align: left
   vertical-align: top
-  &.social h1
-    background:white
-    margin:0
-    padding:0.25em 0
-    color:light-text-color
+  &.social 
+    height:175px
+    > a
+      background-color:brand-color
+      height:100%
+    .row
+      height:100%
+    h1
+      background:white
+      margin:0
+      padding:0.25em 0 1em
+      color:light-text-color
 
 .js .grid > li
   display: none
@@ -39,22 +46,20 @@
   font-size:10rem
 
 /* Title box */
-.title-box > a
-  background-color: brand-color
+.title-box a
+  color: dark-text-color
 
 .title-box h2,
 .title-box h1
-  padding:1rem
+  padding:0
+  margin:0
+
+.title-box h1
+  font-size:4rem
 
 .title-box h2
+  font-size:2rem
   display: block
-  
-.title-box h2 a
-  display: block
-  font-weight: 900
-
-.title-box h2 a:hover
-  color: #D3EEE2
 
 /* Anchor and image */
 .grid > li > a,
@@ -66,7 +71,7 @@
 .grid > li > a
   position: relative
   overflow: hidden
-  margin: 7px
+  margin: 0.5rem
 
 /* Curtain element */
 .grid .curtain
@@ -124,9 +129,9 @@
   transition: border-width 0.2s, border-color 0.2s
 
 /* Hover effects */
-.grid > li.shown img
+.grid > li.shown > a > img
   transition: transform 10s ease
-.grid > li.shown:hover img
+.grid > li.shown:hover > a > img
   transform: scale3d(1.1,1.1,1)
 
 /* Animations */

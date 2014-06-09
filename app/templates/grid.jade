@@ -1,7 +1,11 @@
 li.title-box
-  a.light(href="#")
-    h1 Hi! 
-    h2 I'm Adam Argyle
+  .row
+    .column-4-hand
+      img(src='img/avatar.png')
+    .column-8-hand
+      a(href="#")
+        h1 Hi! 
+        h2 I'm Adam Argyle
     //- p Here's all the hats I can wear:
     //- dl
     //-   dt Developer Operations
@@ -46,7 +50,7 @@ li.title-box
 each item in projects
   case item.type
     when 'project'
-      li.project
+      li.project(data-key=item.key)
         a(href=item.url)
           //- img(src="img/tiles/#{item.image}")
           img(src=item.image)
@@ -55,18 +59,17 @@ each item in projects
             p= item.detail
     when 'social'
       li.social
-        a(href=item.url)
-          //- img(src="img/tiles/#{item.image}")
-          img(src=item.image)
-          if item.detail || item.title
-            figcaption
+        a.light(href=item.url)
+          .row.center-hand.middle-hand
+            .column-8-hand  
               if item.title
                 i(class="social-icon block text-center fa fa-"+item.title)
               if item.detail
                 p= item.detail
     when 'message'
       li.title-box
-        h2 
-          b Devigner:
-          br 
-          | A creative who is a developer and designer.
+        a
+          h2 
+            b= item.title
+            br 
+            span= item.message

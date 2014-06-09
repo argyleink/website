@@ -2,7 +2,7 @@
   display: block
   width:100%
 
-.hidden
+.hidden, .hidden.row
   display:none
 
 .font-thin
@@ -18,6 +18,14 @@
 
 @media (max-width:400px)
   .hidden-ss
+    display:none
+
+@media tablet-max
+  .hidden-hand
+    display:none
+
+@media portrait
+  .hidden-hand
     display:none
 
 .fit

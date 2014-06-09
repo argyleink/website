@@ -34,4 +34,8 @@ var Page = (function() {
     ev.preventDefault();
     load(Projects[$(this).data().key]);
   });
+
+  return {
+    load: load
+  }
 })();

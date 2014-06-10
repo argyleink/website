@@ -40,11 +40,11 @@ var Article = (function(el, options) {
   function disable_scroll() {
     window.onmousewheel = document.onmousewheel = wheel;
     document.onkeydown = keydown;
-    document.body.ontouchmove = touchmove;
+    // document.body.ontouchmove = touchmove;
   }
 
   function enable_scroll() {
-    window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
   }
 
   var docElem     = window.document.documentElement,
@@ -146,6 +146,7 @@ var Article = (function(el, options) {
   $(trigger).on('click', function() { 
     toggle('reveal'); 
   });
+  $('.container .header').height(window.innerHeight);
 
   return {
     disable:    disable,

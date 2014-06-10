@@ -15,6 +15,7 @@ $(function(){
   $(window).resize(setAppHeight);
   function setAppHeight() {
     App.Browser.ipadAndUp = window.innerWidth >= 1024;
+    $('.container .header').height(window.innerHeight);
   }
   setAppHeight();
 

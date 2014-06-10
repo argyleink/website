@@ -11,11 +11,15 @@
   min-height: 500px
 
 .grid > li
+  @extend .no-callout
   display: inline-block
   overflow: hidden
-  width: 325px
   text-align: left
   vertical-align: top
+  width:100%
+  @media tablet
+    width: 325px
+
   &.social 
     .row
       background-color:brand-color

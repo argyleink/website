@@ -3,23 +3,22 @@ li.title-box
     .column-4-hand
       img(src='img/avatar.png')
     .column-8-hand
-      a(href="#")
+      a
         h1 Hi! 
         h2 I'm Adam Argyle
         h3.hint-text
-          i.fa.fa-html5
-          i.fa.fa-css3
-          i.fa.fa-git
-          i.fa.fa-apple
-          i.fa.fa-android
-          i.fa.fa-windows
+          i.fa.fa-fw.fa-html5
+          i.fa.fa-fw.fa-css3
+          i.fa.fa-fw.fa-git
+          i.fa.fa-fw.fa-apple
+          i.fa.fa-fw.fa-android
+          i.fa.fa-fw.fa-windows
 
 each item in projects
   case item.type
     when 'project'
       li.project(data-key=item.key)
         a(href=item.url)
-          //- img(src="img/tiles/#{item.image}")
           img(src=item.image)
           figcaption
             h3= item.title
@@ -34,9 +33,7 @@ each item in projects
               if item.detail
                 p= item.detail
     when 'message'
-      li.title-box
+      li.message
         a
-          h2 
-            b= item.title
-            br 
-            span= item.message
+          .fa.fa-quote-left.fa-3x
+          p= item.message

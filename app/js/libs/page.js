@@ -36,7 +36,7 @@ var Page = (function() {
         opacity:    ["1","0"]
       });
     }
-    
+
     classie.addClass( pages[ currentPage ], 'show' );
   }
 
@@ -51,7 +51,7 @@ var Page = (function() {
     }
   }
 
-  $('#grid').on('click', '> li', function(ev){
+  $('#grid').on('click', '> li:not(.title-box)', function(ev){
     ev.preventDefault();
     load(Projects[$(this).data().key]);
   });

@@ -25,12 +25,12 @@ var Projects = {
     type:   'project',
     article:{
       cover: {
-        title:    '1 Reader: 20+ Of The Greatest Magazines',
+        title:    '1 Reader, 20+ Of The Greatest Magazines',
         subline:  'Made specially for Windows 8',
         image:    'img/projects/nextissue-home.jpg'
       },
-      title: 'A Challenging Set Of List Views',
-      subline: 'Very advanced javascript renderer'
+      title: 'WinJS Native App Development',
+      subline: 'Advanced javascript listview renderer'
     }
   },
   'clear': { 
@@ -42,34 +42,50 @@ var Projects = {
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'A connection of several rad projects',
+        subline:  'Node | Mongo | Zepto | Local Storage',
         image:    'img/projects/clear-large.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'A weekend project',
+      subline: 'Fun challenges like this keep me alive'
+    }
+  },
+  'tedx': { 
+    key:    'tedx',
+    image:  'img/tiles/tedx.png',
+    title:  'TEDx',
+    detail: 'Topic: Connectivity',
+    url:    'tedx.html',
+    type:   'project',
+    article:{
+      cover: {
+        title:    'I chose to speak about user interface',
+        subline:  'It is connecting everything',
+        image:    'img/projects/tedx-large.png'
+      },
+      title: 'About my speech',
+      subline: 'Presented on an HTML5 slider website'
     }
   },
   'ubercute': { 
     key:    'ubercute',
     image:  'img/tiles/ubercute.png',
     title:  'Uber Cute Baby Animals',
-    detail: 'An app so cute, no one can withstand it.',
+    detail: 'Designed and Developed by Me',
     url:    'ubercute.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'Uber Cute Baby Animals',
+        subline:  'A Windows 8 Productivity App',
         image:    'img/projects/ubercute-semantic.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'WinJS Is a Great native framework',
+      subline: 'This native app is powered by a Wordpress JSON Feed'
     }
   },
   'linkedin': { 
     key:    'linkedin',
-    image:  'img/tiles/github.png',
     title:  'linkedin',
     url:    'http://www.linkedin.com/in/adamargyle/',
     type:   'social'
@@ -78,17 +94,17 @@ var Projects = {
     key:    'leap',
     image:  'img/tiles/leap.png',
     title:  'Leap Motion',
-    detail: 'Fun little projects',
+    detail: 'Fun little experiments',
     url:    'leap.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
-        image:    ''
+        title:    'More fun than XBox Kinect',
+        subline:  'Trust Me, I\'ve tried both',
+        image:    'img/projects/leap.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'I want this to be the future',
+      subline: 'Gestures will forever be interesting to me'
     }
   },
   'dieantsdie': { 
@@ -100,29 +116,29 @@ var Projects = {
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
-        image:    ''
+        title:    'My First Cross Platform Game',
+        subline:  'All custom code',
+        image:    'img/projects/dieantsdie.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'ActionScript3 Seemed like a good idea',
+      subline: 'But then it wasn\'t...'
     }
   },
   'lessons': { 
     key:    'lessons',
     image:  'img/tiles/lessons.jpg',
-    title:  'HTML/Javascript Lessons',
-    detail: 'I have open sourced a decent amount of work to help people learn and build better web sites.',
+    title:  'HTML5 | JS | CSS Lessons',
+    detail: 'I Beleive in the web',
     url:    'lessons.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'Speeches, Teaching, and Open Source Code',
+        subline:  'An Evangalist Indeed',
         image:    'img/projects/embrace-ui.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'Sharing is caring',
+      subline: 'So I share a lot'
     }
   },
   'github': { 
@@ -168,7 +184,7 @@ var Projects = {
   },
   'condenast': { 
     key:    'condenast',
-    image:  'http://placebox.es/400/600',
+    image:  'img/tiles/gq.png',
     title:  'Conde Nast:GQ',
     detail: 'Windows 8 WinJS Responsive Native App',
     url:    'condenast.html',
@@ -177,7 +193,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/condenast.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -185,7 +201,7 @@ var Projects = {
   },
   'storyville': { 
     key:    'storyville',
-    image:  'http://placebox.es/600/400',
+    image:  'img/tiles/storyville.png',
     title:  'Storyville',
     detail: 'Coffee for a cause',
     url:    'storyville.html',
@@ -194,7 +210,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/storyville-home.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -226,7 +242,7 @@ var Projects = {
   },
   'syntaxbros': { 
     key:    'syntaxbros',
-    image:  'http://placebox.es/600/400',
+    image:  'img/tiles/syntaxbros.png',
     title:  'Syntax Bros',
     detail: 'ActionScript 3 game built for the developer',
     url:    'syntaxbros.html',
@@ -235,7 +251,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/syntaxbros-level1.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -243,16 +259,16 @@ var Projects = {
   },
   'visqueen': { 
     key:    'visqueen',
-    image:  'http://placebox.es/600/400',
+    image:  'img/tiles/visqueen.png',
     title:  'Visqueen',
-    detail: 'Awesome Seattle band.',
+    detail: 'Awesome Pop Punk Seattle band.',
     url:    'visqueen.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
+        title:    'Proud to do their website',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/visqueen-large.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -267,7 +283,7 @@ var Projects = {
   },
   'naturespace': { 
     key:    'naturespace',
-    image:  'http://placebox.es/600/400',
+    image:  'img/tiles/naturespace.png',
     title:  'Naturespace',
     detail: '3D Sounds',
     url:    'naturespace.html',
@@ -276,7 +292,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/naturespace-featured.jpeg'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -284,8 +300,7 @@ var Projects = {
   },
   'whymessage': {
     key:      'whymessage',
-    title:    '"',
-    message:  'It is not what you do, it is why you do it.',
+    message:  'It\'s not what you do, it\'s why you do it.',
     type:     'message'
   }
 };

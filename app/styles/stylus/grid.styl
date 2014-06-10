@@ -10,12 +10,6 @@
   list-style: none
   min-height: 500px
 
-.js .grid
-  background: url(../img/loading.gif) no-repeat 50% 100px
-
-.js .grid.loaded
-  background: none
-
 .grid > li
   display: inline-block
   overflow: hidden
@@ -34,6 +28,15 @@
       margin:0
       padding:0.25em 0 1em
       color:light-text-color
+  &.message
+    > a
+      background-color:light-text-color
+      color:white
+      padding:1rem
+      text-align:center
+    p
+      margin-top:1rem
+      font-weight:normal
 
 .js .grid > li
   display: none

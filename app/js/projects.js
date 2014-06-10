@@ -20,13 +20,13 @@ var Projects = {
     key:    'nextissue',
     image:  'img/tiles/nextissue.png',
     title:  'Next Issue Media',
-    detail: 'Magazine reader made for Windows 8',
+    detail: 'Made specially for Windows 8',
     url:    'nextissue.html',
     type:   'project',
     article:{
       cover: {
         title:    '1 Reader, 20+ Of The Greatest Magazines',
-        subline:  'Made specially for Windows 8',
+        subline:  'Windows 8 | HTML | CSS | Javascript | WinJS',
         image:    'img/projects/nextissue-home.jpg'
       },
       title: 'WinJS Native App Development',
@@ -37,13 +37,13 @@ var Projects = {
     key:    'clear',
     image:  'img/tiles/clear.png',
     title:  'Clear',
-    detail: 'Javascript PhoneGap HTML5 recreation backed by Nodejs & Mongo',
+    detail: 'Recreation with: Javascript | PhoneGap | HTML5 | Nodejs | Mongo',
     url:    'clear.html',
     type:   'project',
     article:{
       cover: {
         title:    'A connection of several rad projects',
-        subline:  'Node | Mongo | Zepto | Local Storage',
+        subline:  'Javascript | PhoneGap | HTML5 | Nodejs | Mongo',
         image:    'img/projects/clear-large.png'
       },
       title: 'A weekend project',
@@ -77,7 +77,7 @@ var Projects = {
     article:{
       cover: {
         title:    'Uber Cute Baby Animals',
-        subline:  'A Windows 8 Productivity App',
+        subline:  'HTML | CSS | JS | Wordpress | JSON',
         image:    'img/projects/ubercute-semantic.png'
       },
       title: 'WinJS Is a Great native framework',
@@ -95,7 +95,7 @@ var Projects = {
     key:    'leap',
     image:  'img/tiles/leap.png',
     title:  'Leap Motion',
-    detail: 'Fun little experiments',
+    detail: 'Fun little Javascript experiments',
     url:    'leap.html',
     type:   'project',
     article:{
@@ -112,13 +112,13 @@ var Projects = {
     key:    'dieantsdie',
     image:  'img/tiles/dieantsdie.png',
     title:  'Die Ants Die!',
-    detail: 'ActionScript 3 game built for iOS, Android, and BlackBerry phones and tablets',
+    detail: 'ActionScript 3 game',
     url:    'dieantsdie.html',
     type:   'project',
     article:{
       cover: {
         title:    'My First Cross Platform Game',
-        subline:  'All custom code',
+        subline:  'iOS | Android | BlackBerry | phones | tablets',
         image:    'img/projects/dieantsdie.png'
       },
       title: 'ActionScript3 Seemed like a good idea',
@@ -128,8 +128,8 @@ var Projects = {
   'lessons': { 
     key:    'lessons',
     image:  'img/tiles/lessons.jpg',
-    title:  'HTML5 | JS | CSS Lessons',
-    detail: 'I Beleive in the web',
+    title:  'I Beleive in the web',
+    detail: 'Lessons | Open Source | HTML5 | JS | CSS',
     url:    'lessons.html',
     type:   'project',
     article:{
@@ -153,7 +153,7 @@ var Projects = {
     key:    'icookbook',
     image:  'img/tiles/icookbook.png',
     title:  'iCookbook',
-    detail: 'Recipe application for iOS, Android, Kindle, Win8, and more',
+    detail: 'Recipe app: iOS | Android | Kindle | Win8 | webOS',
     url:    'icookbook.html',
     type:   'project',
     article:{
@@ -170,7 +170,7 @@ var Projects = {
     key:    'film',
     image:  'img/tiles/film.png',
     title:  'Film.com',
-    detail: 'Advanced Wordpress site',
+    detail: 'Advanced Wordpress site: PHP | Javascript | HTML | CSS',
     url:    'film.html',
     type:   'project',
     article:{
@@ -204,24 +204,24 @@ var Projects = {
     key:    'storyville',
     image:  'img/tiles/storyville.png',
     title:  'Storyville',
-    detail: 'Coffee for a cause',
+    detail: 'Coffee for a cause: HTML | CSS | Javascript | .NET',
     url:    'storyville.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'Storyville Coffee',
+        subline:  'Building a CMS & E-Commerce Site',
         image:    'img/projects/storyville-home.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'Challenging, because it was modern',
+      subline: 'A practice in Ui engineering for .NET'
     }
   },
   'marketleader': { 
     key:    'marketleader',
     image:  'img/tiles/marketleader.png',
     title:  'Market Leader',
-    detail: 'Real Estate Mobile Web App',
+    detail: 'Real Estate Mobile Web App: HTML | CSS | Javascript | PHP',
     url:    'marketleader.html',
     type:   'project',
     article:{
@@ -277,7 +277,7 @@ var Projects = {
   },
   'codepen': { 
     key:    'codepen',
-    title:  'Follow me on CodePen',
+    title:  'Peep my CodePens',
     icon:   'codepen',
     url:    'http://codepen.io/argyleink/',
     type:   'social'

@@ -1,11 +1,9 @@
-header.header
-  .bg-img.project-img(style="background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.8)), url(#{article.cover.image})")
-  .title
+header(style="height:100vh;")
+  //- linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.8)), 
+  .bg-img.project-img(style="background-image:url(#{article.cover.image})")
+  .title.light
     h1= article.cover.title
     h2= article.cover.subline
-    #read.trigger.btn.light.push-right 
-      i.fa.fa-book
-      |  Read
     .btn.light 
       i.fa.fa-gamepad
       |  Demo
@@ -14,11 +12,11 @@ header.header
     .column-3-hand
       i.fa.fa-3x.fa-angle-down
 
-.title
+.project-title
   h1= article.title
   p.subline= article.subline
 
-article.content.dark
+article.dark
   .row.center-hand
     #project-post.column-10-hand.text-left
       //- filled from ajax

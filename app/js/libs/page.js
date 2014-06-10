@@ -23,16 +23,11 @@ var Page = (function() {
 
     if (currentPage === 0) {
       App.Home.enable();
-      App.Project.disable();
-      App.Project = null;
       swapNav(false);
     } else {
-      App.Project = new Article($('#project')[0], {
-        trigger:  '#read'
-      });
       swapNav(true);
       $('#project').velocity({ 
-        translateY: ["0","-10px"],
+        translateY: ["0","-20px"],
         opacity:    ["1","0"]
       });
     }

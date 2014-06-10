@@ -61,7 +61,7 @@ var Article = (function(el, options) {
   }
   
   function scrollPage() {
-    if (!enabled) return;
+    if (!enabled) return false;
     scrollVal = scrollY();
     
     if( noscroll && !ie ) {
@@ -124,10 +124,14 @@ var Article = (function(el, options) {
 
   function disable() {
     enabled = false;
+    noscroll = true;
+    disable_scroll();
   }
 
   function enable() {
     enabled = true;
+    noscroll = false;
+    enable_scroll();
   }
 
   function getContainer() {

@@ -33,13 +33,6 @@ var Projects = {
       subline: 'Post Subline'
     }
   },
-  'github': { 
-    key:    'github',
-    image:  'img/tiles/github.png',
-    title:  'github-alt',
-    url:    'https://github.com/argyleink',
-    type:   'social'
-  },
   'clear': { 
     key:    'clear',
     image:  'img/tiles/clear.png',
@@ -132,11 +125,11 @@ var Projects = {
       subline: 'Post Subline'
     }
   },
-  'twitter': { 
-    key:    'twitter',
+  'github': { 
+    key:    'github',
     image:  'img/tiles/github.png',
-    title:  'twitter',
-    url:    'https://twitter.com/argyleink',
+    title:  'github-alt',
+    url:    'https://github.com/argyleink',
     type:   'social'
   },
   'icookbook': { 
@@ -223,6 +216,13 @@ var Projects = {
       title: 'Post Title',
       subline: 'Post Subline'
     }
+  },
+  'twitter': { 
+    key:    'twitter',
+    image:  'img/tiles/github.png',
+    title:  'twitter',
+    url:    'https://twitter.com/argyleink',
+    type:   'social'
   },
   'syntaxbros': { 
     key:    'syntaxbros',

@@ -82,12 +82,12 @@
   }
 
   SVGLoader.prototype._animateSVG = function( dir, callback ) {
-    var self = this,
-      pos = 0,
-      steps = dir === 'out' ? this.closingSteps : this.openingSteps,
-      stepsTotal = dir === 'out' ? this.closingStepsTotal : this.openingStepsTotal,
-      speed = dir === 'out' ? self.options.speedOut : self.options.speedIn,
-      easing = dir === 'out' ? self.options.easingOut : self.options.easingIn,
+    var self        = this,
+        pos         = 0,
+        steps       = dir === 'out' ? this.closingSteps : this.openingSteps,
+        stepsTotal  = dir === 'out' ? this.closingStepsTotal : this.openingStepsTotal,
+        speed       = dir === 'out' ? self.options.speedOut : self.options.speedIn,
+        easing      = dir === 'out' ? self.options.easingOut : self.options.easingIn,
       nextStep = function( pos ) {
         if( pos > stepsTotal - 1 ) {
           if( callback && typeof callback == 'function' ) {

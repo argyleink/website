@@ -27,8 +27,11 @@ var Page = (function() {
     } else {
       swapNav(true);
       $('#project').velocity({ 
-        translateY: ["0","-20px"],
+        translateY: ["0","5%"],
         opacity:    ["1","0"]
+      },{
+        duration: 1000,
+        easing: 'spring'
       });
     }
 

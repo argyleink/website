@@ -1,8 +1,9 @@
 header.header
   .bg-img.bg-video
-    video(autoplay)
-      source(src='img/video/ink.mov', type='video/mov')
-      source(src='img/video/ink.mp4', type='video/mp4')
+    video(autoplay, preload='auto')
+      source(src='http://encoding.com.result.s3.amazonaws.com/b4b109a84dc4a15144cbea78d30af632_188764_83977431.mp4', type='video/mp4')
+      source(src='http://encoding.com.result.s3.amazonaws.com/91b4f349d5c0cb65ce13de82d9268b5e_188760_83975544.webm', type='video/webm')
+      source(src='http://pc-upload.s3.amazonaws.com/91b4f349d5c0cb65ce13de82d9268b5e_188760.mov', type='video/mov')
   .title
     img.logo(src='img/argyle-ink.png')
       

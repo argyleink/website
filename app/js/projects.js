@@ -10,7 +10,7 @@ var Projects = {
       cover: {
         title:    'Lively',
         subline:  'Cross Platform Native/Web Hybrid Mobile First Responsive App',
-        image:    ''
+        image:    'img/projects/lively-show.png'
       },
       title: 'How & Why Mobile Web',
       subline: 'Mobile web choices are complicated'

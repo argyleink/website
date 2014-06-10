@@ -11,33 +11,33 @@ var Page = (function() {
     jade.render($('#project')[0], 'project', templateData);
     $('#project-post').load('ajax/' + templateData.url);
     App.Home.disable();
+    window.scrollTo(0,0);
     // after some time hide loader
     setTimeout(hideAndSwap, 1000);
   }
 
   function hideAndSwap() {
-    App.Project = new Article($('#project')[0], {
-      trigger:  '#read'
-    });
-    // loader.hide();
-
     classie.removeClass( pages[ currentPage ], 'show' );
     // update..
     currentPage = currentPage ? 0 : 1;
-    classie.addClass( pages[ currentPage ], 'show' );
-
-    $('#project').velocity({ 
-      translateY: ["0","-10px"],
-      opacity:    ["1","0"]
-    });
 
     if (currentPage === 0) {
       App.Home.enable();
+      App.Project.disable();
       App.Project = null;
       swapNav(false);
     } else {
+      App.Project = new Article($('#project')[0], {
+        trigger:  '#read'
+      });
       swapNav(true);
+      $('#project').velocity({ 
+        translateY: ["0","-10px"],
+        opacity:    ["1","0"]
+      });
     }
+    
+    classie.addClass( pages[ currentPage ], 'show' );
   }
 
   function swapNav(showDetail) {

@@ -28,8 +28,17 @@
     min-height 100%
     max-width initial
 
+.bg-video
+  &.bg-img
+    background:none
+  > video
+    position:relative
+    left:-35%
+    height:100%
+
 .project-img
-  background-size:auto 100vh
+  height:100vh
+  background-size:cover
   background-position:center top
   background-repeat:no-repeat
   -webkit-filter: blur(7px)

@@ -12,11 +12,11 @@ header(style="height:100vh;")
     .column-3-hand
       i.fa.fa-3x.fa-angle-down
 
-.project-title
-  h1= article.title
-  p.subline= article.subline
-
 article.dark
+  .row.center-hand
+    .project-title.column-11-hand
+      h1= article.title
+      p.subline= article.subline
   .row.center-hand
     #project-post.column-10-hand.text-left
       //- filled from ajax

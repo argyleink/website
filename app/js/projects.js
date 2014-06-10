@@ -86,7 +86,7 @@ var Projects = {
   },
   'linkedin': { 
     key:    'linkedin',
-    title:  'Linked In',
+    title:  'Connect on Linked In',
     icon:   'linkedin',
     url:    'http://www.linkedin.com/in/adamargyle/',
     type:   'social'
@@ -144,7 +144,7 @@ var Projects = {
   },
   'github': { 
     key:    'github',
-    title:  'GitHub',
+    title:  'Find me on GitHub',
     icon:   'github-alt',
     url:    'https://github.com/argyleink',
     type:   'social'
@@ -236,7 +236,7 @@ var Projects = {
   },
   'twitter': { 
     key:    'twitter',
-    title:  'Twitter',
+    title:  'Follow me on Twitter',
     icon:   'twitter',
     url:    'https://twitter.com/argyleink',
     type:   'social'
@@ -277,7 +277,7 @@ var Projects = {
   },
   'codepen': { 
     key:    'codepen',
-    title:  'CodePen',
+    title:  'Follow me on CodePen',
     icon:   'codepen',
     url:    'http://codepen.io/argyleink/',
     type:   'social'

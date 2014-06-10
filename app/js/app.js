@@ -16,6 +16,7 @@ $(function(){
   function setAppHeight() {
     App.Browser.ipadAndUp = window.innerWidth >= 1024;
     $('.container .header').height(window.innerHeight);
+    $('video').css('margin-left', '-' + ($('video').width() / 2) + 'px');
   }
   setAppHeight();
 

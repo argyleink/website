@@ -1,18 +1,36 @@
 li.title-box
   .row
     .column-4-hand
-      img(src='img/avatar.png')
+      img(src='img/AdamBro.png')
     .column-8-hand
       a
         h1 Hi! 
         h2 I'm Adam Argyle
+        h4 Ui/UX Web Engineer
         h3.hint-text
-          i.fa.fa-fw.fa-html5
-          i.fa.fa-fw.fa-css3
-          i.fa.fa-fw.fa-git
-          i.fa.fa-fw.fa-apple
-          i.fa.fa-fw.fa-android
-          i.fa.fa-fw.fa-windows
+          i.fa.fa-html5(title='HTML5')
+          i.fa.fa-fw.fa-css3(title='CSS3')
+          i.fa.fa-fw.fa-git(title='Git Version Control')
+          i.fa.fa-fw.fa-apple(title='iOS Apps')
+          i.fa.fa-fw.fa-android(title='Android Apps')
+          i.fa.fa-fw.fa-windows(title='Windows Phone and Windows 8 Apps')
+        dl 
+          dt 
+            b I Enjoy:
+          dt Ui/UX
+          dt Rapid Prototyping
+          dt Hitting 60fps
+          dt Animating Interfaces
+          dt Javascript, lots of Javascript
+          dt HTML5 Single page web apps
+          dt Jade & Stylus
+          dt &nbsp;
+          dt 
+            b I Can Also:
+          dt Build Node, WinJS, and webOS apps
+          dt Write Python, Java, C#, and ActionScript
+          dt Use Less, SASS, SCSS All
+          dt Hack full-stack, all the way to the MySQL
 
 each item in projects
   case item.type
@@ -28,10 +46,12 @@ each item in projects
         a.light(href=item.url)
           .row.center-hand.middle-hand
             .column-8-hand  
-              if item.title
-                i(class="social-icon block text-center fa fa-"+item.title)
+              if item.icon
+                i(class="social-icon block text-center fa fa-"+item.icon)
               if item.detail
                 p= item.detail
+          figcaption
+            h3= item.title
     when 'message'
       li.message
         a

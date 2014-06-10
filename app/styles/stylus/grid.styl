@@ -17,11 +17,8 @@
   text-align: left
   vertical-align: top
   &.social 
-    height:175px
-    > a
-      background-color:brand-color
-      height:100%
     .row
+      background-color:brand-color
       height:100%
     h1
       background:white
@@ -52,6 +49,8 @@
 .title-box a
   color: dark-text-color
 
+.title-box h4,
+.title-box h3,
 .title-box h2,
 .title-box h1
   padding:0
@@ -88,17 +87,8 @@
   height: 100%
   background: #96cdc8
 
-.grid.swipe-right .curtain
-  transform: translate3d(-100%,0,0)
-
 .grid.swipe-down .curtain
-  transform: translate3d(0,-100%,0)
-
-.grid.swipe-rotate .curtain
-  width: 200%
-  height: 200%
-  transform: rotate3d(0,0,1,90deg)
-  transform-origin: top left
+  transform: translate3d(0,-101%,0)
 
 /* Shadow */
 .grid .curtain::after
@@ -134,10 +124,10 @@
   transition: border-width 0.2s, border-color 0.2s
 
 /* Hover effects */
-.grid > li.shown > a > img
-  transition: transform 10s ease
-.grid > li.shown:hover > a > img
-  transform: scale3d(1.1,1.1,1)
+// .grid > li.shown > a > img
+//   transition: transform 10s ease
+// .grid > li.shown:hover > a > img
+//   transform: scale3d(1.1,1.1,1)
 
 /* Animations */
 

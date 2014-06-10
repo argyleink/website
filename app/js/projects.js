@@ -61,7 +61,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/ubercute-semantic.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -110,7 +110,7 @@ var Projects = {
   },
   'lessons': { 
     key:    'lessons',
-    image:  'img/tiles/lessons.png',
+    image:  'img/tiles/lessons.jpg',
     title:  'HTML/Javascript Lessons',
     detail: 'I have open sourced a decent amount of work to help people learn and build better web sites.',
     url:    'lessons.html',
@@ -119,7 +119,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/embrace-ui.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'

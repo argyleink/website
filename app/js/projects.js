@@ -3,48 +3,48 @@ var Projects = {
     key:    'lively',
     image:  'img/tiles/lively.png',
     title:  'Lively',
-    detail: 'Cross platform responsive mobile first web app with native capabilities',
+    detail: 'Cross platform, responsive, mobile first web app with native media playback',
     url:    'lively.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Lively',
-        subline:  'Cross Platform Native/Web Hybrid Mobile First Responsive App',
+        title:    'Lively App',
+        subline:  'HTML | CSS | Javascript | Vagrant | Python | Nginx | AWS | CloudFront | S3',
         image:    'img/projects/lively-show.png'
       },
-      title: 'How & Why Mobile Web',
-      subline: 'Mobile web choices are complicated'
+      title: 'Mobile Web = Power',
+      subline: 'Why did Lively choose a hybrid app architecture?'
     }
   },
   'nextissue': { 
     key:    'nextissue',
     image:  'img/tiles/nextissue.png',
     title:  'Next Issue Media',
-    detail: 'Big Name Magazines made for Windows 8',
+    detail: 'Magazine reader made for Windows 8',
     url:    'nextissue.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
-        image:    ''
+        title:    '1 Reader: 20+ Of The Greatest Magazines',
+        subline:  'Made specially for Windows 8',
+        image:    'img/projects/nextissue-home.jpg'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'A Challenging Set Of List Views',
+      subline: 'Very advanced javascript renderer'
     }
   },
   'clear': { 
     key:    'clear',
     image:  'img/tiles/clear.png',
     title:  'Clear',
-    detail: 'A Javascript PhoneGap HTML5 recreation backed by Nodejs & Mongo',
+    detail: 'Javascript PhoneGap HTML5 recreation backed by Nodejs & Mongo',
     url:    'clear.html',
     type:   'project',
     article:{
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/clear-large.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -143,7 +143,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/icookbook.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -160,7 +160,7 @@ var Projects = {
       cover: {
         title:    'Cover Title',
         subline:  'Cover Subline',
-        image:    ''
+        image:    'img/projects/film-home.png'
       },
       title: 'Post Title',
       subline: 'Post Subline'

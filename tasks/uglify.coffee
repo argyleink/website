@@ -15,6 +15,7 @@ module.exports =
       "dist/js/lib.min.js": [
         "bower_components/jquery/dist/jquery.js"
         "bower_components/velocity/jquery.velocity.js"
+        "bower_components/velocity/velocity.ui.js"
         # "app/js/libs/touche.min.js"
         "app/js/libs/modernizr.custom.js"
         "app/js/libs/masonry.pkgd.min.js"

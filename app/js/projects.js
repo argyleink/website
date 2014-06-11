@@ -3,18 +3,18 @@ var Projects = {
     key:    'lively',
     image:  'img/tiles/lively.png',
     title:  'Lively',
-    detail: 'Cross platform, responsive, mobile first web app with native media playback',
+    detail: 'Cross platform, responsive, mobile first web app with native audio/video playback',
     url:    'lively.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Lively App',
+        title:    'An awesome dev stack',
         subline:  'HTML | CSS | Javascript | Vagrant | Python | Nginx | AWS | CloudFront | S3',
         image:    'img/projects/lively-show.png',
         github:   'https://github.com/LivelyLLC/Lively',
         demo:     'https://app.getlive.ly'
       },
-      title: 'Mobile Web = Power',
+      title: 'Mobile Web is Power',
       subline: 'Why did Lively choose a hybrid app architecture?'
     }
   },
@@ -44,13 +44,13 @@ var Projects = {
     type:   'project',
     article:{
       cover: {
-        title:    'A connection of several rad projects',
+        title:    'A clear Ui style company employee rolodex',
         subline:  'Javascript | PhoneGap | HTML5 | Nodejs | Mongo',
         image:    'img/projects/clear-large.png',
         github:   'https://github.com/argyleink/HTML5-ClearUI',
         demo:     'http://clear-ratio.herokuapp.com/'
       },
-      title: 'A weekend project',
+      title: 'Cloud services, open source, this will be a good weekend',
       subline: 'Fun challenges like this keep me alive'
     }
   },

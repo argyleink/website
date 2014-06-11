@@ -10,7 +10,9 @@ var Projects = {
       cover: {
         title:    'Lively App',
         subline:  'HTML | CSS | Javascript | Vagrant | Python | Nginx | AWS | CloudFront | S3',
-        image:    'img/projects/lively-show.png'
+        image:    'img/projects/lively-show.png',
+        github:   'https://github.com/LivelyLLC/Lively',
+        demo:     'https://app.getlive.ly'
       },
       title: 'Mobile Web = Power',
       subline: 'Why did Lively choose a hybrid app architecture?'
@@ -63,7 +65,8 @@ var Projects = {
       cover: {
         title:    'I chose to speak about user interface',
         subline:  'It is connecting everything',
-        image:    'img/projects/tedx-large.png'
+        image:    'img/projects/tedx-large.png',
+        demo:     'http://slides.com/nerdydork/tedx'
       },
       title: 'About my speech',
       subline: 'Presented on an HTML5 slider website'
@@ -80,7 +83,8 @@ var Projects = {
       cover: {
         title:    'Uber Cute Baby Animals',
         subline:  'HTML | CSS | JS | Wordpress | JSON',
-        image:    'img/projects/ubercute-semantic.png'
+        image:    'img/projects/ubercute-semantic.png',
+        demo:     'http://www.argyleink.com/babyanimals/'
       },
       title: 'WinJS Is a Great native framework',
       subline: 'This native app is powered by a Wordpress JSON Feed'
@@ -104,7 +108,8 @@ var Projects = {
       cover: {
         title:    'More fun than XBox Kinect',
         subline:  'Trust Me, I\'ve tried both',
-        image:    'img/projects/leap.png'
+        image:    'img/projects/leap.png',
+        github:   'https://github.com/argyleink/Leap-Finger-Shooter'
       },
       title: 'I want this to be the future',
       subline: 'Gestures will forever be interesting to me'
@@ -130,15 +135,17 @@ var Projects = {
   'lessons': { 
     key:    'lessons',
     image:  'img/tiles/lessons.jpg',
-    title:  'I Beleive in the web',
-    detail: 'Lessons | Open Source | HTML5 | JS | CSS',
+    title:  'I Believe in the web',
+    detail: 'I try to share as much as I can',
     url:    'lessons.html',
     type:   'project',
     article:{
       cover: {
         title:    'Speeches, Teaching, and Open Source Code',
-        subline:  'An Evangalist Indeed',
-        image:    'img/projects/embrace-ui.png'
+        subline:  'Open Source | HTML5 | JS | CSS',
+        image:    'img/projects/embrace-ui.png',
+        demo:     'http://ratiointeractive.github.io/Intel-DeveloperPortal_LessonCodeSamples/',
+        github:   'https://github.com/RatioInteractive/Intel-DeveloperPortal_LessonCodeSamples'
       },
       title: 'Sharing is caring',
       subline: 'So I share a lot'
@@ -155,13 +162,13 @@ var Projects = {
     key:    'icookbook',
     image:  'img/tiles/icookbook.png',
     title:  'iCookbook',
-    detail: 'Recipe app: iOS | Android | Kindle | Win8 | webOS',
+    detail: 'Recipe app',
     url:    'icookbook.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'Cross many platforms',
+        subline:  'iOS | Android | Kindle | Win8 | webOS',
         image:    'img/projects/icookbook.png'
       },
       title: 'Post Title',
@@ -172,14 +179,15 @@ var Projects = {
     key:    'film',
     image:  'img/tiles/film.png',
     title:  'Film.com',
-    detail: 'Advanced Wordpress site: PHP | Javascript | HTML | CSS',
+    detail: 'Advanced Wordpress site',
     url:    'film.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
-        image:    'img/projects/film-home.png'
+        title:    'A clever design by Bart Claeys',
+        subline:  'HTML | CSS | JS | PHP',
+        image:    'img/projects/film-home.png',
+        demo:     'http://www.film.com/'
       },
       title: 'Post Title',
       subline: 'Post Subline'
@@ -194,8 +202,8 @@ var Projects = {
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'A White Label App Template',
+        subline:  'HTML | CSS | JS | WinJS | Windows 8',
         image:    'img/projects/condenast.png'
       },
       title: 'Post Title',
@@ -206,34 +214,40 @@ var Projects = {
     key:    'storyville',
     image:  'img/tiles/storyville.png',
     title:  'Storyville',
-    detail: 'Coffee for a cause: HTML | CSS | Javascript | .NET',
+    detail: 'Coffee for a cause: ',
     url:    'storyville.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Storyville Coffee',
-        subline:  'Building a CMS & E-Commerce Site',
-        image:    'img/projects/storyville-home.png'
+        title:    'Building a CMS & E-Commerce Site',
+        subline:  'HTML | CSS | Javascript | .NET',
+        image:    'img/projects/storyville-home.png',
+        demo:     'http://www.storyville.com/'
       },
-      title: 'Challenging, because it was modern',
+      title: 'Challenging, modern for it\s time',
       subline: 'A practice in Ui engineering for .NET'
     }
+  },
+  'whymessage': {
+    key:      'whymessage',
+    message:  'It\'s not what you do, it\'s why you do it.',
+    type:     'message'
   },
   'marketleader': { 
     key:    'marketleader',
     image:  'img/tiles/marketleader.png',
     title:  'Market Leader',
-    detail: 'Real Estate Mobile Web App: HTML | CSS | Javascript | PHP',
+    detail: 'Real Estate Mobile Web App',
     url:    'marketleader.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
-        image:    ''
+        title:    'I Like that Market Leader put faith into HTML',
+        subline:  'HTML | CSS | Javascript | PHP | jQuery Mobile',
+        image:    'img/projects/marketleader-large.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'From no mobile experience to a nice one in 6 months',
+      subline: 'I learned I didn\'t like consulting in this role'
     }
   },
   'twitter': { 
@@ -247,34 +261,34 @@ var Projects = {
     key:    'syntaxbros',
     image:  'img/tiles/syntaxbros.png',
     title:  'Syntax Bros',
-    detail: 'ActionScript 3 game built for the developer',
+    detail: 'ActionScript 3 game',
     url:    'syntaxbros.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    '2 Developers dive into their code, and literally shoot the bugs',
+        subline:  'ActionScript 3 | Illustrator | Flash',
         image:    'img/projects/syntaxbros-level1.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: '8 bit music plus vector bit platformer?',
+      subline: 'One of my best game ideas yet'
     }
   },
   'visqueen': { 
     key:    'visqueen',
     image:  'img/tiles/visqueen.png',
     title:  'Visqueen',
-    detail: 'Awesome Pop Punk Seattle band.',
+    detail: 'Awesome Seattle Pop Punk',
     url:    'visqueen.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Proud to do their website',
-        subline:  'Cover Subline',
+        title:    'Helping Seattle Music',
+        subline:  'HTML | CSS | JS | PHP',
         image:    'img/projects/visqueen-large.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'Lots of little projects',
+      subline: 'Lots of HTML | CSS | JS'
     }
   },
   'codepen': { 
@@ -293,17 +307,12 @@ var Projects = {
     type:   'project',
     article:{
       cover: {
-        title:    'Cover Title',
-        subline:  'Cover Subline',
+        title:    'A cool windows 8 app',
+        subline:  'HTML | CSS | JS | WinJS | Windows 8',
         image:    'img/projects/naturespace-featured.jpeg'
       },
       title: 'Post Title',
       subline: 'Post Subline'
     }
-  },
-  'whymessage': {
-    key:      'whymessage',
-    message:  'It\'s not what you do, it\'s why you do it.',
-    type:     'message'
   }
 };

@@ -1,5 +1,5 @@
 module.exports = all:
   files: [
-    src: ["dist/js/**"]
+    src: ["dist/**/*"]
     filter: "isFile"
   ]

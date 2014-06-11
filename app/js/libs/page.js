@@ -24,15 +24,14 @@ var Page = (function() {
     if (currentPage === 0) {
       App.Home.enable();
       swapNav(false);
+      // $('#grid li.shown').velocity(
+      //   "transition.expandIn", { 
+      //     stagger: 120 
+      //   }
+      // );
     } else {
       swapNav(true);
-      $('#project').velocity({ 
-        translateY: ["0","5%"],
-        opacity:    ["1","0"]
-      },{
-        duration: 1000,
-        easing: 'spring'
-      });
+      $('#project').velocity("transition.slideDownIn");
     }
 
     classie.addClass( pages[ currentPage ], 'show' );

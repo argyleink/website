@@ -4,9 +4,14 @@ header(style="height:100vh;")
   .title.light
     h1= article.cover.title
     h2= article.cover.subline
-    .btn.light 
-      i.fa.fa-gamepad
-      |  Demo
+    if article.cover.github
+      a.btn.light.push-right(href=article.cover.github, target='_blank')
+        i.fa.fa-github-alt
+        |  Github
+    if article.cover.demo
+      a.btn.light(href=article.cover.demo, target='_blank')
+        i.fa.fa-gamepad
+        |  Demo
 .directions.text-center
   .row.center-hand
     .column-3-hand

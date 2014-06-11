@@ -44,7 +44,9 @@ var Projects = {
       cover: {
         title:    'A connection of several rad projects',
         subline:  'Javascript | PhoneGap | HTML5 | Nodejs | Mongo',
-        image:    'img/projects/clear-large.png'
+        image:    'img/projects/clear-large.png',
+        github:   'https://github.com/argyleink/HTML5-ClearUI',
+        demo:     'http://clear-ratio.herokuapp.com/'
       },
       title: 'A weekend project',
       subline: 'Fun challenges like this keep me alive'

@@ -16,7 +16,12 @@ $(function(){
   function setAppHeight() {
     App.Browser.ipadAndUp = window.innerWidth >= 1024;
     $('.container .header').height(window.innerHeight);
-    $('video').css('margin-left', '-' + ($('video').width() / 2) + 'px');
+
+    var videoBg = $('video');
+    if (window.innerWidth / window.innerHeight > 1.781)
+      videoBg.css('margin-left', '').addClass('wide');
+    else
+      videoBg.css('margin-left', '-' + (videoBg.width() / 2) + 'px').removeClass('wide');
   }
   setAppHeight();
 

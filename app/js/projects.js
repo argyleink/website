@@ -29,10 +29,10 @@ var Projects = {
       cover: {
         title:    '1 Reader, 20+ Of The Greatest Magazines',
         subline:  'Windows 8 | HTML | CSS | Javascript | WinJS',
-        image:    'img/projects/nextissue-home.jpg'
+        image:    'img/projects/nextissue-home.png'
       },
-      title: 'WinJS Native App Development',
-      subline: 'Advanced javascript listview renderer'
+      title: 'A Challenging WinJS Native App',
+      subline: '2 Advanced javascript listview renderer'
     }
   },
   'clear': { 
@@ -58,18 +58,18 @@ var Projects = {
     key:    'tedx',
     image:  'img/tiles/tedx.png',
     title:  'TEDx',
-    detail: 'Topic: Connectivity',
+    detail: 'Embrace Ui',
     url:    'tedx.html',
     type:   'project',
     article:{
       cover: {
-        title:    'I chose to speak about user interface',
-        subline:  'It is connecting everything',
+        title:    'TEDx topic was Connectivity',
+        subline:  'Ui | UX | Smart Things | Connecting',
         image:    'img/projects/tedx-large.png',
         demo:     'http://slides.com/nerdydork/tedx'
       },
-      title: 'About my speech',
-      subline: 'Presented on an HTML5 slider website'
+      title: 'The Speech Went Awesome',
+      subline: 'My slides were built using HTML5'
     }
   },
   'ubercute': { 
@@ -86,8 +86,8 @@ var Projects = {
         image:    'img/projects/ubercute-semantic.png',
         demo:     'http://www.argyleink.com/babyanimals/'
       },
-      title: 'WinJS Is a Great native framework',
-      subline: 'This native app is powered by a Wordpress JSON Feed'
+      title: 'How Uber Cute was born',
+      subline: 'The power of a JSON feed'
     }
   },
   'linkedin': { 
@@ -111,8 +111,8 @@ var Projects = {
         image:    'img/projects/leap.png',
         github:   'https://github.com/argyleink/Leap-Finger-Shooter'
       },
-      title: 'I want this to be the future',
-      subline: 'Gestures will forever be interesting to me'
+      title: 'Future Ui',
+      subline: 'Gestures are so interesting!'
     }
   },
   'dieantsdie': { 
@@ -125,7 +125,7 @@ var Projects = {
     article:{
       cover: {
         title:    'My First Cross Platform Game',
-        subline:  'iOS | Android | BlackBerry | phones | tablets',
+        subline:  'ActionScript3 | iOS | Android | BlackBerry | phones | tablets',
         image:    'img/projects/dieantsdie.png'
       },
       title: 'ActionScript3 Seemed like a good idea',

@@ -2,8 +2,10 @@ header(style="height:100vh;")
   //- linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.8)), 
   .bg-img.project-img(style="background-image:url(#{article.cover.image})")
   .title.light
-    h1= article.cover.title
-    h2= article.cover.subline
+    .row.center-hand.center-lap
+      .column-12-hand.column-9-lap
+        h1= article.cover.title
+        h2= article.cover.subline
     if article.cover.github
       a.btn.light.push-right(href=article.cover.github, target='_blank')
         i.fa.fa-github-alt

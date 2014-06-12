@@ -18,6 +18,12 @@ module.exports =
         cwd:    "app/img"
         src:    ["*"]
         dest:   "dist/img"
+      },
+      {
+        expand: true
+        cwd:    "app/fonts"
+        src:    ["*"]
+        dest:   "dist/fonts"
       }
     ]
   images:

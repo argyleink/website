@@ -1,6 +1,7 @@
 var Page = (function() {
   var pageWrap        = document.getElementById('pagewrap'),
       pages           = [].slice.call(pageWrap.querySelectorAll('.page')),
+      pageDOM,
       currentPage     = 0,
       loader          = new SVGLoader(document.getElementById('loader'), { 
         speedIn : 100 
@@ -8,8 +9,9 @@ var Page = (function() {
 
   function load(templateData) {
     loader.show();
-    jade.render($('#project')[0], 'project', templateData);
-    $('#project-post').load('ajax/' + templateData.url);
+    pageDOM = $('<div>');
+    jade.render(pageDOM[0], 'project', templateData);
+    $(pageDOM.find('#project-post')).load('ajax/' + templateData.url);
     App.Home.disable();
     window.scrollTo(0,0);
     // after some time hide loader
@@ -31,6 +33,7 @@ var Page = (function() {
       //   }
       // );
     } else {
+      $('#project').html(pageDOM.html());
       swapNav(true);
       $('#project').velocity("transition.slideDownIn");
     }

@@ -16,6 +16,6 @@
   ],
   "devDependencies": {
     "velocity":     "*",
-    "touche":       "*"
+    "font-awesome": "*"
   }
 }

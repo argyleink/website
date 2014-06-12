@@ -15,7 +15,6 @@ var Page = (function() {
     App.Home.disable();
     // after some time hide loader
     setTimeout(hideAndSwap, 1000);
-    $('#project header').height(window.innerHeight);
   }
 
   function hideAndSwap() {
@@ -36,7 +35,7 @@ var Page = (function() {
       $('#project').html(pageDOM.html());
       $('#project header, #project .project-img').height(window.innerHeight);
       swapNav(true);
-      $('#project').velocity("transition.slideDownIn");
+      $('#project > header').velocity("transition.slideDownIn");
     }
 
     classie.addClass( pages[ currentPage ], 'show' );

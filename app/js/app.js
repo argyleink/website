@@ -10,6 +10,10 @@ $(function(){
     viewportFactor : 0.4
   });
 
+  $('video').on('loadeddata', function(){
+    $('#white-cover').remove();
+  });
+
   // set container height
   // watch it on resize, to reset app height, jqueries resize is throttled
   $(window).resize(setAppHeight);

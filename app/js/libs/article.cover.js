@@ -41,11 +41,11 @@ var Article = (function(el, options) {
     window.onmousewheel = document.onmousewheel = wheel;
     document.onkeydown = keydown;
     // document.body.ontouchmove = touchmove;
-    $('#home header').on('touchmove', touchmove);
+    $('#home').on('touchmove', touchmove);
   }
 
   function enable_scroll() {
-    $('#home header').off('touchmove', touchmove);
+    $('#home').off('touchmove', touchmove);
     window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
   }
 

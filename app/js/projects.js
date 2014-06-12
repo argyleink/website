@@ -32,7 +32,7 @@ var Projects = {
         image:    'img/projects/nextissue-home.png'
       },
       title: 'A Challenging WinJS Native App',
-      subline: '2 Advanced javascript listview renderer'
+      subline: 'Advanced javascript listview renderer'
     }
   },
   'clear': { 

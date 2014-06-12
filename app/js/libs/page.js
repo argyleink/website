@@ -13,7 +13,6 @@ var Page = (function() {
     jade.render(pageDOM[0], 'project', templateData);
     $(pageDOM.find('#project-post')).load('ajax/' + templateData.url);
     App.Home.disable();
-    window.scrollTo(0,0);
     // after some time hide loader
     setTimeout(hideAndSwap, 1000);
     $('#project header').height(window.innerHeight);
@@ -33,7 +32,9 @@ var Page = (function() {
       //   }
       // );
     } else {
+      window.scrollTo(0,0);
       $('#project').html(pageDOM.html());
+      $('#project header, #project .project-img').height(window.innerHeight);
       swapNav(true);
       $('#project').velocity("transition.slideDownIn");
     }

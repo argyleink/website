@@ -1,4 +1,4 @@
-header(style="height:100vh;")
+header
   //- linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.8)), 
   .bg-img.project-img(style="background-image:url(#{article.cover.image})")
   .title.light
@@ -21,11 +21,11 @@ header(style="height:100vh;")
 
 article.dark
   .row.center-hand
-    .project-title.column-11-hand
+    .project-title.column-12-hand.column-11-lap
       h1= article.title
       p.subline= article.subline
   .row.center-hand
-    #project-post.column-10-hand.text-left
+    #project-post.column-11-hand.column-10-lap.text-left
       //- filled from ajax
   footer.row.center-hand
     .column-10-hand.column-5-lap.column-3-desk

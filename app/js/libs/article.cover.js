@@ -45,6 +45,7 @@ var Article = (function(el, options) {
   }
 
   function enable_scroll() {
+    $('#home header').off('touchmove', touchmove);
     window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
   }
 

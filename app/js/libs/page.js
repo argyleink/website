@@ -14,6 +14,7 @@ var Page = (function() {
     window.scrollTo(0,0);
     // after some time hide loader
     setTimeout(hideAndSwap, 1000);
+    $('#project header').height(window.innerHeight);
   }
 
   function hideAndSwap() {
@@ -53,7 +54,7 @@ var Page = (function() {
     load(Projects[$(this).data().key]);
   });
 
-  $('body').on('click', '#close-article', function(ev){
+  $('body').on('click', '.close-article', function(ev){
     hideAndSwap();
     $('#project').empty();
     Page.loader.hide();

@@ -146,7 +146,7 @@ var Article = (function(el, options) {
   $(trigger).on('click', function() { 
     toggle('reveal'); 
   });
-  $('.container .header').height(window.innerHeight);
+  $('#project header').height(window.innerHeight);
 
   return {
     disable:    disable,

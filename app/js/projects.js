@@ -125,7 +125,7 @@ var Projects = {
     article:{
       cover: {
         title:    'My First Cross Platform Game',
-        subline:  'ActionScript3 | iOS | Android | BlackBerry | phones | tablets',
+        subline:  'ActionScript3 | iOS | Android | BlackBerry | Tablets | Facebook | Web',
         image:    'img/projects/dieantsdie.png'
       },
       title: 'ActionScript3 Seemed like a good idea',
@@ -162,17 +162,17 @@ var Projects = {
     key:    'icookbook',
     image:  'img/tiles/icookbook.png',
     title:  'iCookbook',
-    detail: 'Recipe app',
+    detail: 'Cross Platform Recipe app',
     url:    'icookbook.html',
     type:   'project',
     article:{
       cover: {
-        title:    'Cross many platforms',
-        subline:  'iOS | Android | Kindle | Win8 | webOS',
+        title:    'Early Web Hybrid App',
+        subline:  'iOS | Android | Kindle | Win8 | webOS | HTML | CSS | Javascript',
         image:    'img/projects/icookbook.png'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'The first major hybrid app I worked on',
+      subline: 'I learned alot about mobile webview performance in this project'
     }
   },
   'film': { 

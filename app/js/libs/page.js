@@ -53,7 +53,7 @@ var Page = (function() {
     }
   }
 
-  $('#grid').on('click', '> li:not(.title-box)', function(ev){
+  $('#grid').on('click', '> li:not(.title-box, .message, .social)', function(ev){
     ev.preventDefault();
     load(Projects[$(this).data().key]);
   });

@@ -326,5 +326,12 @@ var Projects = {
       title: 'Gesture based tablet audio player',
       subline: 'Helps you relax'
     }
+  },
+  'codeivate': { 
+    key:    'codeivate',
+    title:  'Level 18 on Codeivate',
+    icon:   'code-fork',
+    url:    'http://www.codeivate.com/users/argyleink',
+    type:   'social'
   }
 };

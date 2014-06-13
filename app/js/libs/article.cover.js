@@ -94,11 +94,13 @@ var Article = (function(el, options) {
     
     if( reveal ) {
       classie.add( container, 'modify' );
+      $('.rap > a').addClass('dark');
     }
     else {
       noscroll = true;
       disable_scroll();
       classie.remove( container, 'modify' );
+      $('.rap > a').removeClass('dark');
     }
 
     // simulating the end of the transition:

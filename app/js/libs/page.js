@@ -11,7 +11,8 @@ var Page = (function() {
     loader.show();
     pageDOM = $('<div>');
     jade.render(pageDOM[0], 'project', templateData);
-    $(pageDOM.find('#project-post')).load('ajax/' + templateData.url);
+    if (templateData.url)
+      $(pageDOM.find('#project-post')).load('ajax/' + templateData.url);
     App.Home.disable();
     // after some time hide loader
     setTimeout(hideAndSwap, 1000);

@@ -6,6 +6,8 @@ header(style='opacity:0')
       .column-12-hand.column-9-lap
         h1= article.cover.title
         h2= article.cover.subline
+        if article.cover.date
+          h3= article.cover.date
     if article.cover.github
       a.btn.light.push-right(href=article.cover.github, target='_blank')
         i.fa.fa-github-alt

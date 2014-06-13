@@ -12,7 +12,8 @@ var Projects = {
         subline:  'HTML | CSS | Javascript | Vagrant | Python | Nginx | AWS | CloudFront | S3',
         image:    'img/projects/lively-show.png',
         github:   'https://github.com/LivelyLLC/Lively',
-        demo:     'https://app.getlive.ly'
+        demo:     'https://app.getlive.ly',
+        date:     '2013-2014'
       },
       title: 'Mobile Web is Power',
       subline: 'Why did Lively choose a hybrid app architecture?'
@@ -29,7 +30,8 @@ var Projects = {
       cover: {
         title:    '1 Reader, 20+ Of The Greatest Magazines',
         subline:  'Windows 8 | HTML | CSS | Javascript | WinJS',
-        image:    'img/projects/nextissue-home.png'
+        image:    'img/projects/nextissue-home.png',
+        date:     '2012'
       },
       title: 'A Challenging WinJS Native App',
       subline: 'Advanced javascript listview renderer'
@@ -48,7 +50,8 @@ var Projects = {
         subline:  'Javascript | PhoneGap | HTML5 | Nodejs | Mongo',
         image:    'img/projects/clear-large.png',
         github:   'https://github.com/argyleink/HTML5-ClearUI',
-        demo:     'http://clear-ratio.herokuapp.com/'
+        demo:     'http://clear-ratio.herokuapp.com/',
+        date:     '2012'
       },
       title: 'Cloud services, open source, this will be a good weekend',
       subline: 'Fun challenges like this keep me alive'
@@ -66,7 +69,8 @@ var Projects = {
         title:    'TEDx topic was Connectivity',
         subline:  'Ui | UX | Smart Things | Connecting',
         image:    'img/projects/tedx-large.png',
-        demo:     'http://slides.com/nerdydork/tedx'
+        demo:     'http://slides.com/nerdydork/tedx',
+        date:     '2014'
       },
       title: 'The Speech Went Awesome',
       subline: 'My slides were built using HTML5'
@@ -84,7 +88,8 @@ var Projects = {
         title:    'Uber Cute Baby Animals',
         subline:  'HTML | CSS | JS | Wordpress | JSON',
         image:    'img/projects/ubercute-semantic.png',
-        demo:     'http://www.argyleink.com/babyanimals/'
+        demo:     'http://www.argyleink.com/babyanimals/',
+        date:     '2012'
       },
       title: 'How Uber Cute was born',
       subline: 'The power of a JSON feed'
@@ -109,7 +114,8 @@ var Projects = {
         title:    'More fun than XBox Kinect',
         subline:  'Trust Me, I\'ve tried both',
         image:    'img/projects/leap.png',
-        github:   'https://github.com/argyleink/Leap-Finger-Shooter'
+        github:   'https://github.com/argyleink/Leap-Finger-Shooter',
+        date:     '2013'
       },
       title: 'Future Ui',
       subline: 'Gestures are so interesting!'
@@ -126,7 +132,8 @@ var Projects = {
       cover: {
         title:    'My First Cross Platform Game',
         subline:  'ActionScript3 | iOS | Android | BlackBerry | Tablets | Facebook | Web',
-        image:    'img/projects/dieantsdie.png'
+        image:    'img/projects/dieantsdie.png',
+        date:     '2010'
       },
       title: 'ActionScript3 Seemed like a good idea',
       subline: 'But then it wasn\'t...'
@@ -169,10 +176,11 @@ var Projects = {
       cover: {
         title:    'Early Web Hybrid App',
         subline:  'iOS | Android | Kindle | Win8 | webOS | HTML | CSS | Javascript',
-        image:    'img/projects/icookbook.png'
+        image:    'img/projects/icookbook.png',
+        date:     '2010-2012'
       },
-      title: 'The first major hybrid app I worked on',
-      subline: 'I learned alot about mobile webview performance in this project'
+      title: 'Thus begins learning about browser engines',
+      subline: 'Paint & Render'
     }
   },
   'film': { 
@@ -187,10 +195,11 @@ var Projects = {
         title:    'A clever design by Bart Claeys',
         subline:  'HTML | CSS | JS | PHP',
         image:    'img/projects/film-home.png',
-        demo:     'http://www.film.com/'
+        demo:     'http://www.film.com/',
+        date:     '2010'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'Custom modules galore',
+      subline: 'Early Wordpress, had to build your own pieces'
     }
   },
   'condenast': { 
@@ -198,16 +207,16 @@ var Projects = {
     image:  'img/tiles/gq.png',
     title:  'Conde Nast:GQ',
     detail: 'Windows 8 WinJS Responsive Native App',
-    url:    'condenast.html',
     type:   'project',
     article:{
       cover: {
-        title:    'A White Label App Template',
+        title:    'White Label App',
         subline:  'HTML | CSS | JS | WinJS | Windows 8',
-        image:    'img/projects/condenast.png'
+        image:    'img/projects/condenast.png',
+        date:     '2013'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: '1 Build process: 20 apps',
+      subline: 'Clever, no?'
     }
   },
   'storyville': { 
@@ -222,9 +231,10 @@ var Projects = {
         title:    'Building a CMS & E-Commerce Site',
         subline:  'HTML | CSS | Javascript | .NET',
         image:    'img/projects/storyville-home.png',
-        demo:     'http://www.storyville.com/'
+        demo:     'http://www.storyville.com/',
+        date:     '2011'
       },
-      title: 'Challenging, modern for it\s time',
+      title: 'First big site with Windows tech',
       subline: 'A practice in Ui engineering for .NET'
     }
   },
@@ -238,15 +248,15 @@ var Projects = {
     image:  'img/tiles/marketleader.png',
     title:  'Market Leader',
     detail: 'Real Estate Mobile Web App',
-    url:    'marketleader.html',
     type:   'project',
     article:{
       cover: {
         title:    'I Like that Market Leader put faith into HTML',
         subline:  'HTML | CSS | Javascript | PHP | jQuery Mobile',
-        image:    'img/projects/marketleader-large.png'
+        image:    'img/projects/marketleader-large.png',
+        date:     '2012'
       },
-      title: 'From no mobile experience to a nice one in 6 months',
+      title: 'From no mobile web experience, to a nice one in 6 months',
       subline: 'I learned I didn\'t like consulting in this role'
     }
   },
@@ -268,7 +278,9 @@ var Projects = {
       cover: {
         title:    '2 Developers dive into their code, and literally shoot the bugs',
         subline:  'ActionScript 3 | Illustrator | Flash',
-        image:    'img/projects/syntaxbros-level1.png'
+        image:    'img/projects/syntaxbros-level1.png',
+        demo:     'http://www.kongregate.com/games/nathanbroyles/syntax-bros',
+        date:     '2011'
       },
       title: '8 bit music plus vector bit platformer?',
       subline: 'One of my best game ideas yet'
@@ -279,13 +291,13 @@ var Projects = {
     image:  'img/tiles/visqueen.png',
     title:  'Visqueen',
     detail: 'Awesome Seattle Pop Punk',
-    url:    'visqueen.html',
     type:   'project',
     article:{
       cover: {
         title:    'Helping Seattle Music',
         subline:  'HTML | CSS | JS | PHP',
-        image:    'img/projects/visqueen-large.png'
+        image:    'img/projects/visqueen-large.png',
+        date:     '2009'
       },
       title: 'Lots of little projects',
       subline: 'Lots of HTML | CSS | JS'
@@ -303,16 +315,16 @@ var Projects = {
     image:  'img/tiles/naturespace.png',
     title:  'Naturespace',
     detail: '3D Sounds',
-    url:    'naturespace.html',
     type:   'project',
     article:{
       cover: {
         title:    'A cool windows 8 app',
         subline:  'HTML | CSS | JS | WinJS | Windows 8',
-        image:    'img/projects/naturespace-featured.jpeg'
+        image:    'img/projects/naturespace-featured.jpeg',
+        date:     '2011'
       },
-      title: 'Post Title',
-      subline: 'Post Subline'
+      title: 'Gesture based tablet audio player',
+      subline: 'Helps you relax'
     }
   }
 };

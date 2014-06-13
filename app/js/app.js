@@ -24,10 +24,12 @@ $(function(){
     $('.container .header').height(window.innerHeight);
 
     var videoBg = $('video');
-    if (window.innerWidth / window.innerHeight > 1.781)
+    console.log('w: ' + window.innerWidth);
+    console.log('h: ' + window.innerHeight);
+    if (window.innerWidth / window.innerHeight > 1.77778)
       videoBg.css('margin-left', '').addClass('wide');
     else
-      videoBg.css('margin-left', '-' + (videoBg.width() / 2) + 'px').removeClass('wide');
+      videoBg.css('margin-left', '-' + (videoBg.width() / 2 - 30) + 'px').removeClass('wide');
   }
   setAppHeight();
 

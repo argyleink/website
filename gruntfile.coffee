@@ -33,10 +33,12 @@ module.exports = (grunt) ->
   
   # for prod use, minify all js files, html is already compressed 
   grunt.registerTask "prod", [
+    "clean"
+    "shell:clientjade"
     "uglify:libs"
+    "copy:prod" 
     "stylus:compile" 
     "jade:release"
-    "shell:clientjade"
     "uglify:prod"
     "cssc" 
     "notify:prod"

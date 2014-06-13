@@ -16,7 +16,7 @@ module.exports =
       {
         expand: true
         cwd:    "app/img"
-        src:    ["*"]
+        src:    ["**/*"]
         dest:   "dist/img"
       },
       {
@@ -26,8 +26,14 @@ module.exports =
         dest:   "dist/fonts"
       }
     ]
-  images:
+  prod:
     files: [
+      {
+        expand: true
+        cwd:    "app/fonts"
+        src:    ["*"]
+        dest:   "dist/fonts"
+      },
       {
         expand: true
         cwd:    "app/img"

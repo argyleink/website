@@ -24,8 +24,6 @@ $(function(){
     $('.container .header').height(window.innerHeight);
 
     var videoBg = $('video');
-    console.log('w: ' + window.innerWidth);
-    console.log('h: ' + window.innerHeight);
     if (window.innerWidth / window.innerHeight > 1.77778)
       videoBg.css('margin-left', '').addClass('wide');
     else

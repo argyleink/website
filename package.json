@@ -11,14 +11,13 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "postinstall":  "./node_modules/grunt-cli/bin/grunt prod",
+    "postinstall":  "grunt prod",
     "start":        "node server.js"
   },
   "devDependencies": {
     "css-condense":           "*",
     "bower":                  "*",
     "grunt":                  "*",
-    "grunt-cli":              "*",
     "grunt-bump":             "*",
     "grunt-concurrent":       "*",
     "grunt-contrib-clean":    "*",
@@ -34,6 +33,7 @@
     "grunt-shell":            "*",
     "load-grunt-configs":     "*",
     "matchdep":               "*",
+    "clientjade":             "*",
     "time-grunt":             "*",
     "node-static":            "*"
   }

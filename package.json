@@ -18,6 +18,7 @@
     "css-condense":           "*",
     "bower":                  "*",
     "grunt":                  "*",
+    "grunt-cli":              "*",
     "grunt-bump":             "*",
     "grunt-concurrent":       "*",
     "grunt-contrib-clean":    "*",

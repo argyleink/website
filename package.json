@@ -11,7 +11,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "postinstall":  "sudo bash setup.sh && grunt prod",
+    "postinstall":  "./node_modules/grunt-cli/bin/grunt prod",
     "start":        "node server.js"
   },
   "devDependencies": {

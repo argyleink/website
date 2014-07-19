@@ -5,7 +5,11 @@
   "private":  false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/argyleink/website.git"
+    "url":  "https://github.com/argyleink/website.git"
+  },
+  "scripts": {
+    "postinstall":  "bower install && grunt prod",
+    "start":        "node server.js",
   },
   "devDependencies": {
     "css-condense":           "*",
@@ -25,6 +29,7 @@
     "grunt-shell":            "*",
     "load-grunt-configs":     "*",
     "matchdep":               "*",
-    "time-grunt":             "*"
+    "time-grunt":             "*",
+    "node-static":            "*"
   }
 }

@@ -11,7 +11,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "postinstall":  "bower install && grunt prod",
+    "postinstall":  "bash setup.sh && grunt prod",
     "start":        "node server.js"
   },
   "devDependencies": {

@@ -3,6 +3,7 @@
   "version":  "0.0.1",
   "author":   "Adam Argyle",
   "private":  false,
+  "repository": "https://github.com/argyleink/website.git",
   "devDependencies": {
     "css-condense":           "*",
     "grunt":                  "*",

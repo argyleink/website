@@ -11,7 +11,7 @@
   "scripts": {
     "start":        "node server.js",
     "preinstall":   "npm install bower",
-    "postinstall":  "node_modules/.bin/bower install && grunt dev"
+    "postinstall":  "node_modules/.bin/bower install"
   },
   "engines": {
     "node": "0.10.x"

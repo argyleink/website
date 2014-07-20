@@ -10,13 +10,13 @@
   },
   "scripts": {
     "start":        "node server.js",
-    "preinstall":   "npm install bower",
     "postinstall":  "node_modules/.bin/bower install"
   },
   "engines": {
     "node": "0.10.x"
   },
   "devDependencies": {
+    "bower":                  "*",
     "css-condense":           "*",
     "grunt-bump":             "*",
     "grunt-concurrent":       "*",
@@ -37,6 +37,7 @@
     "clientjade":             "*"
   },
   "dependencies": {
-    "connect":                "*"
+    "connect":                "*",
+    "bower":                  "*"
   }
 }

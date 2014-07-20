@@ -51,4 +51,5 @@ module.exports = (grunt) ->
     "concurrent:makeLibs" 
     "concurrent:stylusAndJade"
     "shell:clientjade"
+    "copy:heroku"
   ]

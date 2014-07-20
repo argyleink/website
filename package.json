@@ -11,10 +11,10 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "postinstall":  "bower install && grunt heroku",
+    "postinstall":  "node_modules/.bin/bower install && grunt heroku",
     "start":        "node server.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "css-condense":           "*",
     "bower":                  "*",
     "grunt":                  "*",

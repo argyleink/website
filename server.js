@@ -1,6 +1,6 @@
 var static = require('node-static');
 
-var fileServer = new static.Server('/dist', { gzip: true });
+var fileServer = new static.Server('dist', { gzip: true });
 
 require('http').createServer(function (request, response) {
   request.addListener('end', function () {
@@ -14,4 +14,4 @@ require('http').createServer(function (request, response) {
       }
     });
   }).resume();
-}).listen(8080);
+}).listen(process.env.PORT || 8080);

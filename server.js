@@ -1,5 +1,6 @@
-var express = require('express'); 
-var app = express();
+var connect = require('connect');
 
-app.use(express.static('dist'));
-app.listen(process.env.PORT || 3030);
+var app = connect()
+  .use(connect.logger('dev'))
+  .use(connect.static('dist'))
+  .listen(process.env.PORT || 3030);

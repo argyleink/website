@@ -10,4 +10,4 @@ var server = http.createServer(function(req, res){
 })
 
 // Listen
-server.listen(3030)
+server.listen(process.env.PORT || 3030)

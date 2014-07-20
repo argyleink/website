@@ -7,9 +7,6 @@
     "type": "git",
     "url": "https://github.com/argyleink/website.git"
   },
-  "scripts": {
-    "postinstall": "grunt heroku"
-  },
   "devDependencies": {
     "css-condense":           "*",
     "grunt-bump":             "*",

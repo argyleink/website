@@ -12,7 +12,7 @@
   },
   "scripts": {
     "preinstall":   "bower install",
-    "postinstall":  "grunt",
+    "postinstall":  "grunt heroku",
     "start":        "node server.js"
   },
   "devDependencies": {

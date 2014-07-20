@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/argyleink/website.git"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "devDependencies": {
     "css-condense":           "*",
     "grunt-bump":             "*",

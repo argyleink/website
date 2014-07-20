@@ -10,6 +10,9 @@
   "scripts": {
     "start": "node server.js"
   },
+  "engines": {
+    "node": "0.10.x"
+  },
   "devDependencies": {
     "css-condense":           "*",
     "grunt-bump":             "*",
@@ -28,6 +31,7 @@
     "load-grunt-configs":     "*",
     "matchdep":               "*",
     "time-grunt":             "*",
-    "clientjade":             "*"
+    "clientjade":             "*",
+    "express":                "*"
   }
 }

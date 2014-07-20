@@ -32,7 +32,6 @@
     "load-grunt-configs":     "*",
     "matchdep":               "*",
     "time-grunt":             "*",
-    "clientjade":             "*",
-    "express":                "*"
+    "clientjade":             "*"
   }
 }

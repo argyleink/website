@@ -39,6 +39,24 @@
   "dependencies": {
     "serve-static":           "*",
     "finalhandler":           "*",
-    "bower":                  "*"
+    "bower":                  "*",
+    "css-condense":           "*",
+    "grunt-bump":             "*",
+    "grunt-concurrent":       "*",
+    "grunt-contrib-clean":    "*",
+    "grunt-contrib-connect":  "*",
+    "grunt-contrib-copy":     "*",
+    "grunt-contrib-jade":     "*",
+    "grunt-contrib-stylus":   "*",
+    "grunt-contrib-uglify":   "*",
+    "grunt-contrib-watch":    "*",
+    "grunt-cssc":             "*",
+    "grunt-newer":            "*",
+    "grunt-notify":           "*",
+    "grunt-shell":            "*",
+    "load-grunt-configs":     "*",
+    "matchdep":               "*",
+    "time-grunt":             "*",
+    "clientjade":             "*"
   }
 }

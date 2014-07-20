@@ -11,8 +11,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "preinstall":   "bower install",
-    "postinstall":  "grunt heroku",
+    "postinstall":  "bower install && grunt heroku",
     "start":        "node server.js"
   },
   "devDependencies": {

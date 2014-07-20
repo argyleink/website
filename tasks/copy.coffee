@@ -35,12 +35,3 @@ module.exports =
         dest:   "dist/img"
       
     ]
-
-  heroku:
-    files: [
-        expand: true
-        cwd:    "dist"
-        src:    ["**/*"]
-        dest:   "public"
-      
-    ]

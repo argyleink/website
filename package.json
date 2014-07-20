@@ -3,6 +3,7 @@
   "version":  "0.0.1",
   "author":   "Adam Argyle",
   "private":  false,
+  "main":     "server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/argyleink/website.git"

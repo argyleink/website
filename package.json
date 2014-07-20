@@ -14,7 +14,7 @@
     "postinstall":  "node_modules/.bin/bower install && grunt heroku",
     "start":        "node server.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "css-condense":           "*",
     "bower":                  "*",
     "grunt":                  "*",

@@ -1,6 +1,13 @@
-var connect = require('connect');
+var finalhandler = require('finalhandler')
+var http = require('http')
+var serveStatic = require('serve-static')
+var serve = serveStatic('dist', {'index': ['index.html', 'index.htm']})
 
-var app = connect()
-  .use(connect.logger('dev'))
-  .use(connect.static('dist'))
-  .listen(process.env.PORT || 3030);
+// Create server
+var server = http.createServer(function(req, res){
+  var done = finalhandler(req, res)
+  serve(req, res, done)
+})
+
+// Listen
+server.listen(3030)

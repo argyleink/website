@@ -37,7 +37,8 @@
     "clientjade":             "*"
   },
   "dependencies": {
-    "connect":                "*",
+    "serve-static":           "*",
+    "finalhandler":           "*",
     "bower":                  "*"
   }
 }

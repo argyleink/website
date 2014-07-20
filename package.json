@@ -39,6 +39,7 @@
   "dependencies": {
     "serve-static":           "*",
     "finalhandler":           "*",
+    "grunt":                  "*",
     "bower":                  "*",
     "css-condense":           "*",
     "grunt-bump":             "*",

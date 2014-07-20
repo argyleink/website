@@ -33,5 +33,8 @@
     "matchdep":               "*",
     "time-grunt":             "*",
     "clientjade":             "*"
+  },
+  "dependencies": {
+    "connect":                "*"
   }
 }

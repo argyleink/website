@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start":        "node server.js",
-    "postinstall":  "node_modules/.bin/bower install && node_modules/.bin/bower heroku"
+    "postinstall":  "node_modules/.bin/bower install && node_modules/.bin/grunt heroku"
   },
   "engines": {
     "node": "0.10.x"

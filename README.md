@@ -18,7 +18,8 @@ I made a new portfolio in 5 days. The result is in this repo and the prod result
 Setup
 =======
 Clone and cd into this repo directory from terminal  
-Run `bash setup.sh`, this will install all the npm and bower dependencies, also runs the default grunt task  
+Run `npm install`, this will install all the npm and bower dependencies
+When it's done, run `grunt`  
 
 #### Note
 After you've run setup, subsequent app runs should be done with `grunt`  

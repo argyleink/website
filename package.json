@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start":        "node server.js",
-    "postinstall":  "bower install && grunt heroku"
+    "postinstall":  "bower install && ./node_modules/.bin/grunt heroku"
   },
   "engines": {
     "node": "0.10.x"
@@ -40,6 +40,7 @@
     "serve-static":           "*",
     "finalhandler":           "*",
     "grunt":                  "*",
+    "grunt-cli":              "*",
     "bower":                  "*",
     "css-condense":           "*",
     "grunt-bump":             "*",

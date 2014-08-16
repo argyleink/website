@@ -11,6 +11,7 @@ module.exports =
         "app/js/libs/imagesloaded.pkgd.min.js"
         "app/js/libs/snap.svg-min.js"
         "app/js/libs/svg.loader.js"
+        "app/js/libs/ga.js"
       ],
       "dist/js/app.min.js" :[
         "app/js/projects.js"
@@ -35,4 +36,5 @@ module.exports =
         "app/js/libs/imagesloaded.pkgd.min.js"
         "app/js/libs/snap.svg-min.js"
         "app/js/libs/svg.loader.js"
+        "app/js/libs/ga.js"
       ]

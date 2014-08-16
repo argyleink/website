@@ -49,9 +49,8 @@ module.exports = (grunt) ->
 
   grunt.registerTask "heroku", [
     "clean"
-    "concurrent:makeLibs"
-    "clean"
     "shell:clientjade"
+    "concurrent:makeLibs"
     "uglify:libs"
     "copy:prod" 
     "stylus:compile" 

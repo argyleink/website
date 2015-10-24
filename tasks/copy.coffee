@@ -1,37 +1,48 @@
 module.exports = 
-  debug:
+  dev:
     files: [
-        expand: true
-        cwd:    "app/js"
-        src:    ["*.js"]
-        dest:   "dist/js"
-      ,
-        expand: true
-        cwd:    "app/js/libs"
-        src:    ["*.js"]
-        dest:   "dist/js/libs"
-      ,
-        expand: true
-        cwd:    "app/img"
-        src:    ["**/*"]
-        dest:   "dist/img"
-      ,
-        expand: true
-        cwd:    "app/fonts"
-        src:    ["*"]
-        dest:   "dist/fonts"
-      
+      expand: true
+      cwd:    "<%= app_dir %>/js"
+      src:    ["*.js", "!shiv.js"]
+      dest:   "<%= build_dir %>/js"
+    ,
+      expand: true
+      cwd:    "<%= app_dir %>/js/modules"
+      src:    ["*.js"]
+      dest:   "<%= build_dir %>/js/modules"
+    ,
+      expand: true
+      cwd:    "<%= app_dir %>"
+      src:    "<%= bower_files.js %>"
+      dest:   "<%= build_dir %>"
+    ,
+      expand: true
+      cwd:    "<%= app_dir %>/js"
+      src:    "<%= bower_files.dev_css %>"
+      dest:   "<%= build_dir %>/styles"
+    ,
+      expand: true
+      cwd:    "<%= app_dir %>/assets"
+      src:    ["**/*"]
+      dest:   "<%= build_dir %>/assets"
+    ,
+      expand: true
+      cwd:    "<%= app_dir %>/"
+      src:    "<%= app_files.assets %>"
+      dest:   "<%= build_dir %>/"
+    ,
+      expand: true
+      cwd:    "app/js/bower/font-awesome/fonts/"
+      src:    ["*"]
+      dest:   "<%= build_dir %>/styles/bower/font-awesome/fonts"
     ]
+
   prod:
     files: [
-        expand: true
-        cwd:    "app/fonts"
-        src:    ["*"]
-        dest:   "dist/fonts"
-      ,
-        expand: true
-        cwd:    "app/img"
-        src:    ["**/*"]
-        dest:   "dist/img"
-      
+      # prod mostly just copies assets (.txt, .mov, .mp3, etc)
+      # things that dont get crunched but are assets that need served
+      expand: true
+      cwd:    "<%= app_dir %>/"
+      src:    "<%= app_files.assets %>"
+      dest:   "<%= build_dir %>/"
     ]

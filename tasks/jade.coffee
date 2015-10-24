@@ -1,39 +1,21 @@
 module.exports =
-  debug:
+  dev:
     options:
       data:
         dev: true
+        bower: "<%= bower_files.js %>"
+        project: "<%= pkg %>"
+        projects: require('../projects.json')
       pretty: true
+      client: false
+      basedir: 'app'
 
-    files: [
-      expand: true
-      cwd:    "app/"
-      src:    ["*.jade"]
-      dest:   "dist/"
-      ext:    ".html"
-    ,
-      expand: true
-      cwd:    "app/ajax"
-      src:    ["*.jade"]
-      dest:   "dist/ajax"
-      ext:    ".html"
-    ]
+    files: "<%= app_files.jade %>"
 
-  release:
+  prod:
     options:
       data:
         dev: false
+        project: "<%= pkg %>"
 
-    files: [
-      expand: true
-      cwd:    "app/"
-      src:    ["*.jade"]
-      dest:   "dist/"
-      ext:    ".html"
-    ,
-      expand: true
-      cwd:    "app/ajax"
-      src:    ["*.jade"]
-      dest:   "dist/ajax"
-      ext:    ".html"
-    ]
+    files: "<%= app_files.jade %>"

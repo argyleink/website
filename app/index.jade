@@ -1,19 +1,19 @@
-doctype html
-html
-  include includes/head
-  body
-    include includes/nav
-    #pagewrap.pagewrap
-      .page.show
-        section#home.container
-          include includes/header
-          article.content
-            div
-              include includes/grid
+extends _jade/layouts/page
 
-      .page
-        section#project.container
-          //- filled from project.jade template
+block content
+  include _jade/includes/nav
 
-  include includes/loader
-  include includes/scripts
+  #pagewrap.pagewrap
+    .page.show
+      section#home.wrapper
+        include _jade/includes/header
+
+        article.content: div: section.grid-wrap
+          ul#grid.grid.swipe-down
+            include _jade/includes/me
+            include _jade/includes/projects
+
+    .page
+      section#project.wrapper
+
+  include _jade/includes/loader

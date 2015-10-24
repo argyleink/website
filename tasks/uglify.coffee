@@ -1,40 +1,19 @@
 module.exports =
   prod:
-    files: [
-      "dist/js/lib.min.js": [
-        "bower_components/jquery/dist/jquery.js"
-        "bower_components/velocity/jquery.velocity.js"
-        "bower_components/velocity/velocity.ui.js"
-        "app/js/detect-and-fill.js"
-        "app/js/libs/modernizr.custom.js"
-        "app/js/libs/masonry.pkgd.min.js"
-        "app/js/libs/imagesloaded.pkgd.min.js"
-        "app/js/libs/snap.svg-min.js"
-        "app/js/libs/svg.loader.js"
-        "app/js/libs/ga.js"
-      ],
-      "dist/js/app.min.js" :[
-        "app/js/projects.js"
-        "app/js/app.js"
-        "dist/js/templates.js"
-        "app/js/libs/classie.js"
-        "app/js/libs/colorfinder-1.1.js"
-        "app/js/libs/article.cover.js"
-        "app/js/libs/page.js"
-        "app/js/libs/gridScrollFx.js"
-      ]
-    ]
-
-  libs:
+    options:
+      banner: "<%= meta.banner %>"
     files:
-      "dist/js/lib.min.js": [
-        "bower_components/jquery/dist/jquery.js"
-        "bower_components/velocity/jquery.velocity.js"
-        "bower_components/velocity/velocity.ui.js"
-        "app/js/libs/modernizr.custom.js"
-        "app/js/libs/masonry.pkgd.min.js"
-        "app/js/libs/imagesloaded.pkgd.min.js"
-        "app/js/libs/snap.svg-min.js"
-        "app/js/libs/svg.loader.js"
-        "app/js/libs/ga.js"
-      ]
+      "<%= build_dir %>/js/lib.min.js":         "<%= bower_files.js %>"
+      "<%= build_dir %>/js/app.min.js":         "<%= app_files.js.app %>"
+      "<%= build_dir %>/js/polyfill.js":        "<%= app_files.js.polyfills %>"
+      
+  # dev build is using jade imports for easy debug, see scripts.jade
+  dev:
+    options:
+      mangle:           false
+      compress:         false
+      beautify:         true
+      preserveComments: 'all'
+      sourceMap:        true
+    files:
+      "<%= build_dir %>/js/polyfill.js":        "<%= app_files.js.polyfills %>"

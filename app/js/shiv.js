@@ -5,10 +5,10 @@ function addStylesheet(path) {
 // if (Device.android)
 //   addStylesheet('/styles/android.css')
 
-// else if (Device.ios)
-//   addStylesheet('/styles/ios.css')
+if (Device.ios)
+  addStylesheet('/styles/ios.css')
 
-if (Device.ie10 || Device.ie11)
+else if (Device.ie10 || Device.ie11)
   addStylesheet('/styles/ie10.css')
 
 else if (Device.windowsphone8) { 

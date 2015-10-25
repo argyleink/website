@@ -39,10 +39,23 @@ module.exports =
 
   prod:
     files: [
-      # prod mostly just copies assets (.txt, .mov, .mp3, etc)
-      # things that dont get crunched but are assets that need served
+      expand: true
+      cwd:    "<%= app_dir %>/assets/video"
+      src:    ["**/*"]
+      dest:   "<%= build_dir %>/assets/video"
+    , 
+      expand: true
+      cwd:    "<%= app_dir %>/assets"
+      src:    ["**/*"]
+      dest:   "<%= build_dir %>/assets"
+    ,
       expand: true
       cwd:    "<%= app_dir %>/"
       src:    "<%= app_files.assets %>"
       dest:   "<%= build_dir %>/"
+    ,
+      expand: true
+      cwd:    "app/js/bower/font-awesome/fonts/"
+      src:    ["*"]
+      dest:   "<%= build_dir %>/fonts"
     ]

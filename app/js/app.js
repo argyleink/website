@@ -1,3 +1,4 @@
+var App = App || {};
 $(function(){
   // window.scrollTo(0,0);
   

@@ -22,8 +22,9 @@ module.exports = (grunt) ->
       # this is the src order and crunched prod set of app logic/modules
       # remove the wild card to explicitly maintain src order
       app: [
-        "<%= app_dir %>/js/templates.js"
+        "<%= app_dir %>/js/modules/modernizr.custom.js"
         "<%= app_dir %>/js/modules/*"
+        "<%= app_dir %>/js/templates.js"
         "<%= app_dir %>/js/app.js"
         "<%= app_dir %>/js/*.js"
         "!<%= app_dir %>/js/shiv.js" # loaded before libs and app to polyfill, see below

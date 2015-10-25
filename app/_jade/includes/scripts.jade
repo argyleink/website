@@ -12,17 +12,15 @@ if dev
   script(src='js/modules/snap.svg-min.js')
   script(src='js/modules/svg.loader.js')
 
-  script(src='js/modules/article.cover.js')
-  script(src='js/modules/gridScrollFx.js')
-  script(src='js/modules/page.js')
+  script(src='js/article.cover.js')
+  script(src='js/gridScrollFx.js')
+  script(src='js/page.js')
 
   script(src='js/templates.js')
   script(src='js/app.js')
-  //- more of your app scripts here!
-  script(src='js/template-example.js')
-  
   
 else
   script(src='js/lib.min.js')
+  script var Projects = !{JSON.stringify(projects)};
   script(src='js/app.min.js', async)
   script(src='js/modules/ga.js', async)

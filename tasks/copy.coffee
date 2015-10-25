@@ -58,4 +58,9 @@ module.exports =
       cwd:    "app/js/bower/font-awesome/fonts/"
       src:    ["*"]
       dest:   "<%= build_dir %>/fonts"
+    ,
+      expand: true
+      cwd:    "app/js/modules/"
+      src:    "ga.js"
+      dest:   "<%= build_dir %>/js"
     ]

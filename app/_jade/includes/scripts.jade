@@ -20,7 +20,6 @@ if dev
   script(src='js/app.js')
   
 else
-  script(src='js/lib.min.js')
   script var Projects = !{JSON.stringify(projects)};
   script(src='js/app.min.js', async)
-  script(src='js/modules/ga.js', async)
+  script(src='js/ga.js', async)

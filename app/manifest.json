@@ -1,6 +1,6 @@
 {
-  "short_name": "Bolt App",
-  "name": "Bolt: A Badass Static Site Project Seed",
+  "short_name": "Argyle Ink",
+  "name": "Full Stack App Web Dev",
   "icons": [
     {
       "src": "launcher-icon-0-75x.png",
@@ -40,7 +40,7 @@
     }
   ],
   "start_url": "index.html",
-  "background_color": "#000000",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "orientation": "portrait"
 }

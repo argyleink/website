@@ -9,8 +9,7 @@
     "url": "https://github.com/argyleink/website.git"
   },
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install && grunt",
-    "start": "node server.js",
+    "postinstall": "node_modules/.bin/bower install",
     "test": "node_modules/.bin/bower install && grunt test"
   },
   "devDependencies": {

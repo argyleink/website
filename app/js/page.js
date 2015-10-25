@@ -54,7 +54,7 @@ var Page = (function() {
   }
 
   $('#grid').on('click', '> li:not(.title-box, .message, .social)', function(ev){
-    ev.preventDefault();
+    // ev.preventDefault();
     load(Projects[$(this).data().key]);
   });
 

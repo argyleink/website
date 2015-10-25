@@ -17,5 +17,6 @@ module.exports =
       data:
         dev: false
         project: "<%= pkg %>"
+        projects: require('../projects.json')
 
     files: "<%= app_files.jade %>"

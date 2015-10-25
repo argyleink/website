@@ -1,5 +1,6 @@
 .DS_Store
-app/js/bower/
+app/js/bower/*
+!app/js/bower/font-awesome
 build/
 dist/
 node_modules/

@@ -48,9 +48,9 @@ module.exports = (grunt) ->
     grunt.task.run "asciify:headline"
 
     if env != 'prod' then grunt.task.run "browserSync"
-    if env == 'prod' then grunt.task.run "shell:open_#{env}"
+    # if env == 'prod' then grunt.task.run "shell:open_#{env}"
 
-    grunt.task.run "watch"
+    if env != 'prod' then grunt.task.run "watch"
 
   # serve either dev or prod directory
   # run this if you've run prod or dev commands and want to serve the output
@@ -77,13 +77,13 @@ module.exports = (grunt) ->
   
   # hook into Heroku builds with this and the heroku grunt build pack
   # runs your prod tasks, no server, since that is defined in your heroku repo
-  grunt.registerTask "heroku", [
-    "clean"
-    "concurrent:prod_StylusJadeUglify"
-    "copy:prod"
-    "concurrent:shrink"
-    "asciify:build"
-  ]
+  # grunt.registerTask "heroku", [
+  #   "clean"
+  #   "concurrent:prod_StylusJadeUglify"
+  #   "copy:prod"
+  #   "concurrent:shrink"
+  #   "asciify:build"
+  # ]
 
   # handy command for opening the project file in sublime
   # so you dont have to remember

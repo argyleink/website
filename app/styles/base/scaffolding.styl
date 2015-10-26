@@ -68,7 +68,6 @@ figure
 figcaption
   text-align:center
   font-size:1.75rem
-  @extend .font-thin
   padding:1rem 0
   color:$dark-text-color
   border:2px solid hsl(0, 0%, 90%)
@@ -78,8 +77,10 @@ figcaption
   > p
     padding:0 1rem
     margin:0
+    @extend .font-thin
   > h3
     margin:0
+    @extend .font-bold
 
 dl b
   letter-spacing:0

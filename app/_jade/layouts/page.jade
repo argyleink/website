@@ -1,0 +1,22 @@
+doctype html
+html
+  include ../includes/head
+    
+  block title
+    title= project.name
+
+  block description
+    meta(name='description', content='Default page description')
+
+  block css
+    //- master.styl combines all our modules into this file
+    link(rel='stylesheet', href='styles/app.css')
+
+  include ../includes/polyfill
+
+  body
+    block content
+      h1 Default Test Title
+
+    block scripts
+      include ../includes/scripts

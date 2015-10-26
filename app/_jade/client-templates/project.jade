@@ -1,0 +1,36 @@
+header(style='opacity:0')
+  //- linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.8)), 
+  .bg-img.project-img(style="background-image:url(#{article.cover.image})")
+  .title.light
+    .row.center-xs.center-lg
+      .col-xs-12.col-md-9
+        h1= article.cover.title
+        h2= article.cover.subline
+        if article.cover.date
+          h3= article.cover.date
+    if article.cover.github
+      a.btn.light.push-right(href=article.cover.github, target='_blank')
+        i.fa.fa-github-alt
+        |  Github
+    if article.cover.demo
+      a.btn.light(href=article.cover.demo, target='_blank')
+        i.fa.fa-gamepad
+        |  Demo
+  .directions.text-center
+    .row.center-xs
+      .col-xs-3
+        i.fa.fa-3x.fa-angle-down
+
+article.dark
+  .row.center-xs
+    .project-title.col-xs-12.col-md-11
+      h1= article.title
+      p.subline= article.subline
+  .row.center-xs
+    #project-post.col-xs-11.col-md-10.text-left
+      //- filled from ajax
+  footer.row.center-xs
+    .col-xs-10.col-md-5.col-lg-3
+      .btn.dark.close-article
+        .fa.fa-check-circle-o
+        |  Finished Reading

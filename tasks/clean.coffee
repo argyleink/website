@@ -1,5 +1,5 @@
-module.exports = all:
-  files: [
-    src: ["dist/**/*"]
-    filter: "isFile"
-  ]
+module.exports = 
+  dev:
+    files: [
+      src: ["<%= build_dir %>/**/*"]
+    ]

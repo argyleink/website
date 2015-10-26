@@ -1,0 +1,25 @@
+each item in projects
+  case item.type
+    when 'project'
+      li.project(data-key=item.key)
+        a(href=item.url)
+          img(src=item.image)
+          figcaption
+            h3= item.title
+            p= item.detail
+    when 'social'
+      li.social
+        a.light(href=item.url, target='_blank')
+          .row.center-xs.middle-xs
+            .col-auto-8  
+              if item.icon
+                i(class="social-icon block text-center fa fa-"+item.icon)
+              if item.detail
+                p= item.detail
+          figcaption
+            h3= item.title
+    when 'message'
+      li.message
+        a
+          .fa.fa-quote-left.fa-3x
+          p= item.message

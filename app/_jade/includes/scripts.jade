@@ -1,0 +1,25 @@
+if dev
+  //- load libs from build.coffee vendor_files object array
+  each path in bower
+    script(src=path)
+
+  script var Projects = !{JSON.stringify(projects)};
+  script(src='js/modules/modernizr.custom.js')
+  script(src='js/modules/classie.js')
+  script(src='js/modules/colorfinder-1.1.js')
+  script(src='js/modules/masonry.pkgd.min.js')
+  script(src='js/modules/imagesloaded.pkgd.min.js')
+  script(src='js/modules/snap.svg-min.js')
+  script(src='js/modules/svg.loader.js')
+
+  script(src='js/article.cover.js')
+  script(src='js/gridScrollFx.js')
+  script(src='js/page.js')
+
+  script(src='js/templates.js')
+  script(src='js/app.js')
+  
+else
+  script var Projects = !{JSON.stringify(projects)};
+  script(src='js/app.min.js', async)
+  script(src='js/ga.js', async)

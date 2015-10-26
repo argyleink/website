@@ -1,4 +1,8 @@
 .DS_Store
-bower_components/
+app/js/bower/*
+!app/js/bower/font-awesome
+build/
 dist/
 node_modules/
+npm-debug.log
+app.sublime-workspace

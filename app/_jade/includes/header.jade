@@ -1,0 +1,40 @@
+header.header
+  .bg-img.bg-video
+    video(autoplay, webkit-playsinline, preload='auto')
+      //- iOS .mp4
+      source(
+        src='https://dl.dropboxusercontent.com/u/6515442/ink.mp4', 
+        type='video/mp4'
+      )
+      //- Open Web .webm
+      source(
+        src='https://dl.dropboxusercontent.com/u/6515442/ink.webm', 
+        type='video/webm'
+      )
+      //- Firefox/Chrome .ogg
+      source(
+        src='https://dl.dropboxusercontent.com/u/6515442/ink.ogv', 
+        type='video/ogg'
+      )
+      //- Fallback .mov
+      source(
+        src='https://dl.dropboxusercontent.com/u/6515442/ink.mov', 
+        type='video/mov'
+      )
+      //- local fallback
+      source(
+        src='assets/video/ink.mp4', 
+        type='video/mp4'
+      )
+  #white-cover
+  .title
+    img.logo(src='assets/images/argyle-ink.png')
+      
+#projects.directions.text-center
+  .row.center-xs
+    .col-xs-8.col-md-3
+      .trigger.btn.light.block
+        span.fa.fa-th
+        |  Projects
+      br
+      i.trigger.fa.fa-3x.fa-angle-down

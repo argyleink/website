@@ -1,18 +1,8 @@
-// Nib is awesome: http://visionmedia.github.io/nib/
-@import "nib"
+for path in bower
+  @import path
 
-@import "stylus/vars"
-@import "stylus/utilities"
-@import "stylus/base"
-@import "stylus/branding"
-@import "stylus/buttons"
-@import "stylus/animations"
-@import "stylus/scaffolding"
-@import "stylus/article"
-@import "stylus/page"
-@import "stylus/project"
-@import "stylus/grid"
-// @import "stylus/sticky"
-
-@import "../../bower_components/flexboxgrid/css/flexboxgrid.css"
-@import "../../bower_components/font-awesome/css/font-awesome.css"
+@require "nib"
+@require "base/_vars"
+@require "mixins/*"
+@require "base/*"
+@require "modules/*"

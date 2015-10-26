@@ -1,0 +1,189 @@
+.wrapper, .header
+  height 100%
+
+.header
+  position relative
+  margin 0 auto
+  min-height 560px
+  width 100%
+  .title, p
+    color:white
+
+.bg-img
+  background-size: cover, cover
+  position fixed
+  overflow hidden
+  top 0
+  left 0
+  right 0
+  bottom 0
+  backface-visibility hidden
+  img
+    position absolute
+    top 0
+    left 0
+    display block
+    min-width 100%
+    min-height 100%
+    max-width initial
+
+.bg-video
+  &.bg-img
+    background:none
+  > video
+    position:relative
+    left:50%
+    height:100%
+    &.wide
+      left:0
+      margin-left:0
+      width:100%
+      height:auto
+
+.project-img
+  height:100vh
+  background-size:cover
+  background-position:center top
+  background-repeat:no-repeat
+  -webkit-filter: blur(7px)
+  filter: blur(7px)
+
+.title
+  z-index 1000
+  margin 0 auto
+  width 100%
+  text-align center
+  position absolute
+  box-sizing:border-box
+  top 45vh
+  top 45%
+  left 50%
+  transform translateX(-50%) translateY(-50%)
+  pointer-events:none
+  @media phone-max
+    top:35%
+  h1
+    padding 0
+    font-weight 800
+    font-size 8vw
+    margin 0 auto
+    text-transform capitalize
+  h2
+    text-transform uppercase
+  p
+    padding 0 0 0.6em
+    font-weight 300
+    font-size 0.85em
+    margin 0 auto
+    &.subline
+      font-size 1.75em
+      margin-top 2rem
+
+.title h1,
+.title p.subline
+  line-height 1
+
+.directions
+  position fixed
+  width:100%
+  bottom 40px
+  z-index 5000
+  color:white
+  // &:hover i
+  //   transform:translateY(6px)
+  i
+    // transition:transform 0.15s ease
+    animation: bounce-down 1.5s ease-in-out infinite
+
+.wrapper
+  &:not(.notrans)
+    .directions
+      transition opacity 0.3s 0.5s
+  &.modify
+    &:not(.notrans)
+      .directions
+        opacity 0
+        pointer-events none
+        transition-delay 0s
+
+.content
+  margin 0 auto
+  padding 0 0 3em
+  & > div
+    &:not(.title, figure)
+      margin 0 auto
+      max-width 1024px
+      padding 0 1.25em
+      p
+        margin 0 auto 1.5em auto
+        &:first-child
+          font-size 1.35em
+  &.dark
+    background-color:$text-color
+    color:$dark-text-color
+  h3
+    margin 0
+    font-size 1.4em
+  blockquote
+    padding 0.25em
+    font-style italic
+    font-size 1.65em
+    font-family 'Lora', serif
+    line-height 1.4
+    &::before
+      content '\201C'
+    &::after
+      content '\201D'
+
+.wrapper:not(.notrans) .header,
+.wrapper:not(.notrans) > .title,
+.wrapper:not(.notrans) .content > div
+  transition-property opacity, transform
+  transition-duration 1s
+
+.wrapper
+  &:not(.notrans)
+    .header
+      transition-timing-function cubic-bezier(0.7,0,0.3,1)
+      transitionfunction cubic-bezier(0.7,0,0.3,1)
+      transition-duration 1.2s
+  .header
+    position absolute
+    z-index 1500
+    height:100vh
+    // .title
+    //   top 60px
+    //   transform translateX(-50%)
+  & > .title
+    position relative
+    top auto
+    left auto
+    padding 6em 2em 1em
+  .content
+    & > div
+      margin-top 50px
+      color #b2b2c0
+  &.modify
+    .header
+      opacity 0
+      transform translateY(-100%) scale(0.9)
+    &:not(.notrans)
+      & > .title
+        transition-delay 0.5s
+        transition-delay 0.5s
+      .content
+        & > div
+          transition-delay 0.6s
+          transition-delay 0.6s
+
+.wrapper > .title,
+.wrapper .content > div
+  transform translateY(400px)
+  transform translateY(400px)
+  opacity 0
+
+.wrapper.modify > .title,
+.wrapper.modify .content > div
+  transform translateY(0)
+  transform translateY(0)
+  opacity 1

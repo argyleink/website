@@ -75,21 +75,24 @@
   font-size:2rem
   display: block
 
-.eye
+.eyes
+  position:absolute
+  top:53px
+  left:55px
+  transform-origin:center bottom
   animation-name:eye-blink, look-left
-  animation-duration:3s, 10s
-  animation-timing-function:linear, linear
-  animation-iteration-count:infinite, infinite
+  animation-duration:4s, 8s
+  animation-timing-function:linear
+  animation-iteration-count:infinite
+  
+.eye
   width:4px
   height:8px
   position:absolute
-  top:45px
-  left:55px
   background:black
 
 #eye-one
-  animation-name:eye-blink
-  left:65px
+  left:10px
 
 /* Anchor and image */
 .grid > li > a,

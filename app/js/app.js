@@ -6,8 +6,8 @@ $(function(){
     this.play();
   });
 
-  $('video').on('loadeddata', function(){
-    $('#white-cover').remove();
+  $('video').on('loadeddata playing canplay error stalled', function(){
+    $('#white-cover').addClass('hidden');
   });
   
   // init cover page effect
